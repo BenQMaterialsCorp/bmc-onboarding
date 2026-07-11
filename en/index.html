@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Welcome to BenQ Materials | New Employee Onboarding</title>
+<meta name="description" content="BenQ Materials new employee onboarding: pre-arrival preparation, document checklist, health examination, first-day schedule, and transportation guide.">
+<style>
+:root {
+  --purple: #492582;
+  --purple-dark: #34195e;
+  --purple-light: #6d43b8;
+  --purple-pale: #f3eefb;
+  --ink: #2b2b33;
+  --gray: #6b6b76;
+  --line: #e6e1f0;
+  --bg: #faf9fc;
+  --white: #ffffff;
+  --gold: #c9a227;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(73, 37, 130, .08);
+  --shadow-lg: 0 8px 28px rgba(73, 37, 130, .14);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+  outline: 3px solid #f2c94c; outline-offset: 3px;
+}
+.skip-link {
+  position: fixed; left: 14px; top: -80px; z-index: 999;
+  background: #fff; color: var(--purple-dark); padding: 10px 16px;
+  border-radius: 8px; box-shadow: var(--shadow-lg); font-weight: 700;
+}
+.skip-link:focus { top: 12px; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-name { font-weight: 700; font-size: 16px; color: var(--purple-dark); letter-spacing: .02em; }
+.brand-name small { display: block; font-size: 11px; font-weight: 500; color: var(--gray); letter-spacing: .08em; }
+.nav-links { display: flex; gap: 4px; list-style: none; }
+.nav-links a {
+  display: block; padding: 8px 14px; border-radius: 8px;
+  font-size: 14px; font-weight: 500; color: var(--ink); text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.nav-links a:hover { background: var(--purple-pale); color: var(--purple); }
+.nav-links a.active { background: var(--purple-pale); color: var(--purple); font-weight: 700; }
+.nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--purple-dark); margin: 5px 0; border-radius: 2px; }
+.nav-right { display: flex; align-items: center; gap: 8px; }
+.lang-switch {
+  display: inline-block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
+  font-size: 13px; font-weight: 700; color: var(--purple-dark); text-decoration: none;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.lang-switch:hover { background: var(--purple); border-color: var(--purple); color: #fff; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(140deg, var(--purple-dark) 0%, var(--purple) 55%, var(--purple-light) 100%);
+  color: #fff; text-align: center;
+  padding: 84px 20px 96px;
+  position: relative; overflow: hidden;
+}
+.hero::before, .hero::after {
+  content: ""; position: absolute; border-radius: 50%;
+  background: rgba(255,255,255,.06);
+}
+.hero::before { width: 420px; height: 420px; top: -160px; right: -120px; }
+.hero::after { width: 300px; height: 300px; bottom: -140px; left: -100px; }
+.hero-badge {
+  display: inline-block; padding: 6px 18px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.4); font-size: 13px; letter-spacing: .2em;
+  margin-bottom: 22px; position: relative;
+}
+.hero h1 { font-size: clamp(30px, 5.4vw, 48px); font-weight: 900; letter-spacing: .06em; position: relative; }
+.hero p {
+  max-width: 560px; margin: 18px auto 0; font-size: clamp(15px, 2.4vw, 17px);
+  color: rgba(255,255,255,.88); position: relative;
+}
+.hero-cta {
+  margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;
+  text-decoration: none; transition: transform .15s, box-shadow .15s;
+  font-family: inherit; border: 0; cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-gold { background: #fff; color: var(--purple-dark); }
+.btn-ghost { border: 1.5px solid rgba(255,255,255,.6); color: #fff; }
+
+/* ---------- Key info bar ---------- */
+.keybar { max-width: 1080px; margin: -46px auto 0; padding: 0 20px; position: relative; z-index: 5; }
+.keybar-inner {
+  background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+.keybar-item { padding: 22px 24px; border-left: 1px solid var(--line); }
+.keybar-item:first-child { border-left: 0; }
+.keybar-item .k-label { font-size: 12px; letter-spacing: .14em; color: var(--gray); font-weight: 700; }
+.keybar-item .k-value { font-size: 16px; font-weight: 700; color: var(--purple-dark); margin-top: 4px; }
+.keybar-item .k-note { font-size: 13px; color: var(--gray); margin-top: 2px; }
+
+/* ---------- Plant subheadings ---------- */
+.flow-title {
+  text-align: center; font-size: 19px; font-weight: 900; color: var(--purple-dark);
+  margin: 44px 0 6px;
+}
+.flow-title:first-of-type { margin-top: 0; }
+.plant-addr { text-align: center; font-size: 14px; color: var(--gray); margin-bottom: 20px; }
+.plant-addr a { color: var(--purple); font-weight: 700; }
+
+/* ---------- Task dashboard ---------- */
+.task-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.task-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px; text-decoration: none; color: var(--ink); box-shadow: var(--shadow);
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+}
+.task-card:hover { transform: translateY(-3px); border-color: #cbbbe4; box-shadow: var(--shadow-lg); }
+.task-kicker { font-size: 12px; color: var(--purple-light); font-weight: 700; letter-spacing: .08em; }
+.task-card h3 { font-size: 16px; color: var(--purple-dark); margin-top: 4px; }
+.task-card p { font-size: 13px; color: var(--gray); margin-top: 6px; }
+.task-card .task-link { display: block; color: var(--purple); font-size: 13px; font-weight: 700; margin-top: 14px; }
+
+/* ---------- Sections ---------- */
+.section { max-width: 1080px; margin: 0 auto; padding: 72px 20px 8px; }
+.sec-head { text-align: center; margin-bottom: 40px; }
+.sec-head .en {
+  font-family: "Poppins", sans-serif; font-size: 13px; font-weight: 600;
+  letter-spacing: .22em; color: var(--purple-light); text-transform: uppercase;
+}
+.sec-head h2 { font-size: clamp(24px, 4vw, 32px); font-weight: 900; color: var(--purple-dark); margin-top: 6px; }
+.sec-head .lede { max-width: 620px; margin: 12px auto 0; color: var(--gray); font-size: 15px; }
+
+/* ---------- Steps ---------- */
+.steps { display: grid; gap: 16px; }
+.step {
+  display: grid; grid-template-columns: 56px 1fr; gap: 18px;
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 24px; box-shadow: var(--shadow);
+}
+.step-no {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--purple-pale); color: var(--purple);
+  font-family: "Poppins", sans-serif; font-size: 20px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.step h3 { font-size: 17px; font-weight: 700; color: var(--purple-dark); }
+.step p, .step li { font-size: 14.5px; color: var(--ink); }
+.step .muted { color: var(--gray); font-size: 13.5px; }
+.step ul { padding-left: 20px; margin-top: 6px; }
+.step a { color: var(--purple); font-weight: 600; }
+
+/* ---------- Checklist ---------- */
+.check-progress {
+  max-width: 720px; margin: 0 auto 26px;
+  background: var(--white); border: 1px solid var(--line); border-radius: 999px;
+  padding: 6px; box-shadow: var(--shadow);
+}
+.check-progress-bar {
+  height: 12px; border-radius: 999px; width: 0%;
+  background: linear-gradient(90deg, var(--purple), var(--purple-light));
+  transition: width .3s ease;
+}
+.check-progress-text { text-align: center; font-size: 13px; color: var(--gray); margin-top: 8px; }
+.checklist { max-width: 720px; margin: 0 auto; display: grid; gap: 12px; }
+.check-item {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.check-item label {
+  display: grid; grid-template-columns: 26px 1fr; gap: 14px;
+  padding: 18px 20px; cursor: pointer; align-items: start;
+}
+.check-item input { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--purple); cursor: pointer; }
+.check-item .t { font-size: 15.5px; font-weight: 700; color: var(--purple-dark); }
+.check-item .d { font-size: 13.5px; color: var(--gray); margin-top: 2px; }
+.check-item .d a { color: var(--purple); font-weight: 600; }
+.check-item.done { background: var(--purple-pale); }
+.check-item.done .t { text-decoration: line-through; opacity: .6; }
+.check-hint { text-align: center; font-size: 12.5px; color: var(--gray); margin-top: 14px; }
+
+/* ---------- Cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 26px 22px; box-shadow: var(--shadow);
+}
+.card h3 {
+  font-size: 17px; font-weight: 700; color: var(--purple-dark);
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.card .icon {
+  width: 36px; height: 36px; border-radius: 10px; background: var(--purple-pale);
+  display: inline-flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.card p, .card li { font-size: 14.5px; }
+.card ul, .card ol { padding-left: 20px; }
+.card li { margin: 4px 0; }
+.card .muted { color: var(--gray); font-size: 13.5px; }
+.card a { color: var(--purple); font-weight: 600; }
+.tag {
+  display: inline-block; padding: 2px 10px; border-radius: 999px;
+  background: var(--purple-pale); color: var(--purple); font-size: 12px; font-weight: 700;
+}
+.detail-box {
+  max-width: 920px; margin: 18px auto 0; background: #fff;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+}
+.detail-box summary {
+  padding: 17px 20px; cursor: pointer; color: var(--purple-dark); font-weight: 700;
+  list-style-position: inside;
+}
+.detail-body { border-top: 1px solid var(--line); padding: 18px 20px; font-size: 14px; }
+.detail-body p + p, .detail-body ul + p { margin-top: 12px; }
+.detail-body ul { padding-left: 22px; columns: 2; column-gap: 32px; }
+.detail-body li { break-inside: avoid; margin: 5px 0; }
+.detail-body a { color: var(--purple); font-weight: 700; }
+
+/* ---------- Timeline ---------- */
+.timeline { max-width: 720px; margin: 0 auto; position: relative; padding-left: 30px; }
+.timeline::before {
+  content: ""; position: absolute; left: 9px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--line);
+}
+.tl-item { position: relative; padding: 0 0 26px 18px; }
+.tl-item::before {
+  content: ""; position: absolute; left: -27px; top: 7px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--white); border: 3.5px solid var(--purple);
+}
+.tl-item .tl-time { font-family: "Poppins", sans-serif; font-size: 13px; font-weight: 600; color: var(--purple-light); letter-spacing: .04em; }
+.tl-item h3 { font-size: 16.5px; font-weight: 700; color: var(--purple-dark); }
+.tl-item p { font-size: 14.5px; color: var(--gray); }
+
+/* ---------- Notice ---------- */
+.notice {
+  max-width: 1040px; margin: 26px auto 0;
+  background: #fff8e8; border: 1px solid #f0e2b6; border-radius: var(--radius);
+  padding: 18px 22px; font-size: 14px; color: #7a6320;
+  display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start;
+}
+.notice b { color: #5f4d15; }
+
+/* ---------- CTA banner ---------- */
+.cta-banner {
+  max-width: 1080px; margin: 72px auto 0; padding: 0 20px;
+}
+.cta-banner-inner {
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+  border-radius: 20px; color: #fff; text-align: center;
+  padding: 48px 28px; box-shadow: var(--shadow-lg);
+}
+.cta-banner h2 { font-size: clamp(20px, 3.4vw, 27px); font-weight: 900; }
+.cta-banner p { color: rgba(255,255,255,.85); font-size: 14.5px; margin-top: 10px; }
+.cta-banner .btn { margin-top: 24px; }
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 80px; background: var(--purple-dark); color: rgba(255,255,255,.8);
+  padding: 44px 20px 32px; text-align: center; font-size: 13.5px;
+}
+.footer .f-brand { font-weight: 700; font-size: 16px; color: #fff; letter-spacing: .05em; }
+.footer p { margin-top: 8px; }
+.footer .f-line { width: 44px; height: 3px; background: var(--purple-light); margin: 16px auto; border-radius: 2px; }
+.footer a { color: #fff; }
+.footer .legal { max-width: 700px; margin: 18px auto 0; font-size: 12px; color: rgba(255,255,255,.62); }
+
+/* ---------- RWD ---------- */
+@media (max-width: 860px) {
+  .task-grid { grid-template-columns: repeat(2, 1fr); }
+  .keybar-inner { grid-template-columns: 1fr; }
+  .keybar-item { border-left: 0; border-top: 1px solid var(--line); }
+  .keybar-item:first-child { border-top: 0; }
+  .nav-links {
+    display: none; position: absolute; top: 60px; left: 0; right: 0;
+    background: #fff; border-bottom: 1px solid var(--line);
+    flex-direction: column; padding: 10px 16px 16px;
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+}
+@media (max-width: 560px) {
+  .hero { padding: 66px 18px 84px; }
+  .task-grid { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 44px 1fr; padding: 18px; gap: 12px; }
+  .detail-body ul { columns: 1; }
+}
+@media print {
+  .nav, .hero-cta, .nav-toggle, .cta-banner { display: none !important; }
+  .hero { padding: 24px; background: #fff; color: #222; }
+  .hero p { color: #444; }
+  .section { padding-top: 34px; }
+  .card, .step, .check-item { box-shadow: none; break-inside: avoid; }
+  .detail-box { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">BenQ Materials<small>New Employee Onboarding</small></span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#prepare">Before You Arrive</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+        <li><a href="#health">Health Exam</a></li>
+        <li><a href="#dayflow">First Day</a></li>
+        <li><a href="#traffic">Parking &amp; Transit</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a class="lang-switch" href="../" lang="zh-Hant" hreflang="zh-Hant">中文</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <span class="hero-badge">WELCOME ABOARD</span>
+  <h1>Welcome to BenQ Materials</h1>
+  <p>We're delighted that you'll be joining us!<br>Everything you need before your first day is right here — we'll walk you through it, step by step.</p>
+  <div class="hero-cta">
+    <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">Fill in Employee Information</a>
+    <a class="btn btn-ghost" href="#prepare">View Onboarding Steps</a>
+  </div>
+</header>
+
+<!-- ===================== KEY INFO ===================== -->
+<div class="keybar">
+  <div class="keybar-inner">
+    <div class="keybar-item">
+      <div class="k-label">STEP 1 &middot; 7 DAYS BEFORE DAY 1</div>
+      <div class="k-value">Complete the Employee Information form</div>
+      <div class="k-note">So your accounts and access are ready on Day 1</div>
+    </div>
+    <div class="keybar-item">
+      <div class="k-label">STEP 2 &middot; BEFORE DAY 1</div>
+      <div class="k-value">Prepare documents &amp; health report</div>
+      <div class="k-note">See the interactive checklist below</div>
+    </div>
+    <div class="keybar-item">
+      <div class="k-label">STEP 3 &middot; ON DAY 1</div>
+      <div class="k-value">Follow the Day 1 schedule</div>
+      <div class="k-note">Check transportation &amp; parking in advance</div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ===================== 任務儀表板 ===================== -->
+<section class="section" aria-labelledby="taskTitle">
+  <div class="sec-head">
+    <div class="en">Your Onboarding Tasks</div>
+    <h2 id="taskTitle">4 Things to Do Before Day 1</h2>
+    <p class="lede">Follow these in order and you won't miss a thing.</p>
+  </div>
+  <div class="task-grid">
+    <a class="task-card" href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">
+      <span class="task-kicker">TASK 01 &middot; At least 7 days before</span><h3>Fill in Employee Information</h3><p>Complete your employee profile via the company's online form.</p><span class="task-link">Open the form →</span>
+    </a>
+    <a class="task-card" href="#health"><span class="task-kicker">TASK 02 &middot; Schedule early</span><h3>Complete your health examination</h3><p>Check qualified hospitals, what to bring, and report validity.</p><span class="task-link">View health exam info →</span></a>
+    <a class="task-card" href="#checklist"><span class="task-kicker">TASK 03 &middot; Item by item</span><h3>Prepare your documents</h3><p>Use the interactive checklist to confirm every document.</p><span class="task-link">Start the checklist →</span></a>
+    <a class="task-card" href="#traffic"><span class="task-kicker">TASK 04 &middot; The day before</span><h3>Confirm transportation &amp; meeting point</h3><p>Check your route, parking, and where to report.</p><span class="task-link">Check transportation →</span></a>
+  </div>
+</section>
+
+<!-- ===================== 報到前準備 ===================== -->
+<section class="section" id="prepare">
+  <div class="sec-head">
+    <div class="en">Before You Arrive</div>
+    <h2>Before You Arrive</h2>
+    <p class="lede">Please read the following carefully and prepare the required documents in advance.</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-no">1</div>
+      <div>
+        <h3>Fill in Employee Information</h3>
+        <p>Please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">Employee Information form</a> at least <b>7 days before your start date</b>, so we can set up your employee profile and access on Day 1.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">2</div>
+      <div>
+        <h3>Prepare Your Documents</h3>
+        <p>Please prepare the required documents in advance. See the <a href="#checklist">document checklist</a> for details.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">3</div>
+      <div>
+        <h3>Health Examination (self-paid)</h3>
+        <p>Please bring to the hospital:</p>
+        <ul>
+          <li>Original passport or ARC (and NHI card, if available)</li>
+          <li>One 2-inch or 1-inch ID photo</li>
+          <li>Examination fee (self-paid)</li>
+        </ul>
+        <p class="muted">See <a href="#health">Health Examination Information</a> for details.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">4</div>
+      <div>
+        <h3>Open a Salary Bank Account</h3>
+        <p>If you do not have a <b>CTBC Bank</b> or <b>Mega International Commercial Bank</b> account, please bring the first page of your offer letter to the bank to open one.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">5</div>
+      <div>
+        <h3>Report for Day 1</h3>
+        <p>See the <a href="#dayflow">Day 1 schedule</a> and arrive a little early — we'll be waiting for you!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice">
+    <div>&#9998;</div>
+    <div><b>Don't forget:</b> to set up your access in advance, please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener" style="color:#7a6320; font-weight:700; text-decoration:underline;">Employee Information form</a> at least 7 days before your start date.</div>
+  </div>
+</section>
+
+<!-- ===================== 攜帶資料點檢表 ===================== -->
+<section class="section" id="checklist">
+  <div class="sec-head">
+    <div class="en">Onboarding Checklist</div>
+    <h2>Day 1 Document Checklist</h2>
+    <p class="lede">Please prepare all of the following documents. Your progress is saved automatically, so you can use this page as your personal to-do list.</p>
+  </div>
+
+  <div class="notice" style="margin-bottom:26px;">
+    <div>&#9888;</div>
+    <div><b>Please bring all of the following documents on Day 1.</b> If any document is missing, onboarding cannot be completed until it is provided. A <b>digital ID photo</b> is welcome for your employee badge (just show it on Day 1). <b>No personal seal (chop) is needed.</b></div>
+  </div>
+
+  <div class="check-progress"><div class="check-progress-bar" id="progressBar"></div></div>
+  <div class="check-progress-text" id="progressText">Completed 0 / 7</div>
+
+  <div class="checklist" id="checklist-items">
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c1">
+        <span>
+          <span class="t">Employee Information (online form)</span>
+          <span class="d">Make sure you have completed the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">Employee Information form</a>.</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c2">
+        <span>
+          <span class="t">Passport, Work Permit &amp; ARC (originals + one front-and-back copy of each)</span>
+          <span class="d">Originals will be verified and returned on Day 1. A Taiwan National ID card is not required.</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c3">
+        <span>
+          <span class="t">Health examination report (within 3 months), or a receipt from a partner hospital</span>
+          <span class="d">Please provide a report issued within the last 3 months by a <b>regional-level (or higher) hospital</b>, or a receipt from a partner hospital; clinic reports are not accepted. See <a href="#health">Health Examination Information</a>.</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c4">
+        <span>
+          <span class="t">Copy of your CTBC Bank or Mega Bank bankbook</span>
+          <span class="d">If you do not have an account, bring the first page of your offer letter to the bank to open one. Monthly fee-free benefits with our partner banks &mdash; Mega Bank: 10 interbank ATM withdrawals &amp; 10 transfers; CTBC: 30 withdrawals &amp; 15 transfers.</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c5">
+        <span>
+          <span class="t">Highest education diploma (original + one copy)</span>
+          <span class="d">Originals will be verified and returned on Day 1.</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c6">
+        <span>
+          <span class="t">Resignation certificate or proof of previous employment</span>
+          <span class="d">If you have prior work experience, please provide the resignation certificate from your most recent job or other proof of employment (e.g., labor/health insurance transfer record). Fresh graduates or those without formal work experience are exempt.</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c7">
+        <span>
+          <span class="t">Parking application documents (vehicle registration + driver's license, originals &amp; copies)</span>
+          <span class="d">You may apply for either a car or a scooter space. Please bring the originals and copies of your vehicle registration and driver's license. All on-site parking requires prior application; on Day 1, park outside the plant first (see <a href="#traffic">Parking &amp; Transportation</a>). Once you receive your parking permit, you can enter with it.</span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <p class="check-hint">Progress is saved only in your own browser &mdash; nothing is uploaded.</p>
+</section>
+
+<!-- ===================== 體檢資訊 ===================== -->
+<section class="section" id="health">
+  <div class="sec-head">
+    <div class="en">Health Examination</div>
+    <h2>Health Examination Information</h2>
+    <p class="lede">In accordance with the Occupational Safety and Health Act, please complete a health examination at a <b>regional-level (or higher) hospital</b> or one of the recommended hospitals before your start date.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3><span class="icon">&#128203;</span>What to Bring</h3>
+      <ul>
+        <li>Original passport or ARC (and NHI card, if available)</li>
+        <li>One 2-inch or 1-inch ID photo taken <b>within 6 months</b></li>
+        <li>Examination fee (self-paid)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#127973;</span>Hospital Requirements</h3>
+      <p><b>Clinic reports are not accepted.</b> Please choose a regional-level (or higher) hospital or one listed below; <span class="tag">partner hospitals</span> are recommended for discounted rates.</p>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#9200;</span>Already Have a Report?</h3>
+      <p>If you already have a report issued <b>within the last 3 months</b> by a regional-level (or higher) hospital, you do not need another examination.</p>
+    </div>
+  </div>
+  <details class="detail-box">
+    <summary>Examination Fees</summary>
+    <div class="detail-body">
+      <p><b>Partner hospitals:</b></p>
+      <ul style="columns:1;">
+        <li><b>Min-Sheng General Hospital</b>: general examination NT$750 per person (subject to the current year's rates; NT$850 in 2025); special examination items cost about NT$250&ndash;650 depending on the item. The Longtan branch does not offer special examination items &mdash; please use the Jingguo branch or another recommended hospital if needed.</li>
+        <li><b>Te-Jen Hospital</b>: NT$700, general examination only.</li>
+        <li><b>Hua Yang Hospital</b>: NT$580, general examination only.</li>
+      </ul>
+      <p><b>Non-partner hospitals:</b> general examination about NT$850 per person (subject to each hospital's current rates); special examination items about NT$250&ndash;650 depending on the item.</p>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>Taoyuan Hospital List</summary>
+    <div class="detail-body">
+      <p><b>Partner hospitals (discounted rates, recommended):</b></p>
+      <ul style="columns:1;">
+        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院經國院區" target="_blank" rel="noopener">Min-Sheng General Hospital &ndash; Jingguo Branch (敏盛綜合醫院經國院區)</a> | No. 168, Jingguo Rd., Taoyuan Dist., Taoyuan City | Offers special examination items; results are provided to the company for employee health management</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院龍潭院區" target="_blank" rel="noopener">Min-Sheng General Hospital &ndash; Longtan Branch (敏盛綜合醫院龍潭院區)</a> | No. 168, Zhongfeng Rd., Longtan Dist., Taoyuan City | No special examination items; results are provided to the company for employee health management</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=德仁醫院+桃園市桃鶯路245號" target="_blank" rel="noopener">Te-Jen Hospital (德仁醫院)</a> | No. 245, Taoying Rd., Taoyuan Dist., Taoyuan City | No special examination items</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=華揚醫院+中壢區中北路二段316號" target="_blank" rel="noopener">Hua Yang Hospital (華揚醫院)</a> | No. 316, Sec. 2, Zhongbei Rd., Zhongli Dist., Taoyuan City | No special examination items</li>
+      </ul>
+      <p><b>Other recommended hospitals</b> (* = offers special examination items):</p>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=國軍桃園總醫院" target="_blank" rel="noopener">Taoyuan Armed Forces General Hospital (國軍桃園總醫院) *</a> | No. 168, Zhongxing Rd., Longtan Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院" target="_blank" rel="noopener">Taoyuan General Hospital, MOHW (衛生福利部桃園醫院) *</a> | No. 1492, Zhongshan Rd., Taoyuan Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院新屋分院" target="_blank" rel="noopener">Taoyuan General Hospital &ndash; Xinwu Branch (桃園醫院新屋分院)</a> | No. 6, Xinfu 2nd Rd., Xinwu Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=台北榮民總醫院桃園分院" target="_blank" rel="noopener">Taipei Veterans General Hospital &ndash; Taoyuan Branch (台北榮總桃園分院) *</a> | No. 100, Sec. 3, Chenggong Rd., Taoyuan Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天晟醫院" target="_blank" rel="noopener">Ten-Chen Hospital (天晟醫院) *</a> | No. 155, Yanping Rd., Zhongli Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教聖保祿醫院" target="_blank" rel="noopener">St. Paul's Hospital (天主教聖保祿醫院) *</a> | No. 123, Jianxin St., Taoyuan Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=林口長庚紀念醫院" target="_blank" rel="noopener">Linkou Chang Gung Memorial Hospital (林口長庚紀念醫院) *</a> | No. 5, Fuxing St., Guishan Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=桃園長庚醫院" target="_blank" rel="noopener">Taoyuan Chang Gung Memorial Hospital (桃園長庚醫院)</a> | No. 123, Dinghu Rd., Guishan Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=怡仁綜合醫院" target="_blank" rel="noopener">Yee Zen General Hospital (怡仁綜合醫院) *</a> | No. 30, Ln. 321, Yangxin N. Rd., Yangmei Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=聯新國際醫院" target="_blank" rel="noopener">Landseed International Hospital (聯新國際醫院) *</a> | No. 77, Guangtai Rd., Pingzhen Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=楊梅天成醫院" target="_blank" rel="noopener">Ten-Chan Hospital &ndash; Yangmei (楊梅天成醫院) *</a> | No. 356, Sec. 1, Zhongshan N. Rd., Yangmei Dist., Taoyuan City</li>
+      </ul>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>Yunlin Hospital List</summary>
+    <div class="detail-body">
+      <p>* = offers special examination items.</p>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院斗六院區" target="_blank" rel="noopener">NTU Hospital Yunlin Branch &ndash; Douliu (臺大醫院雲林分院斗六院區) *</a> | No. 579, Sec. 2, Yunlin Rd., Douliu City, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院虎尾院區" target="_blank" rel="noopener">NTU Hospital Yunlin Branch &ndash; Huwei (臺大醫院雲林分院虎尾院區)</a> | No. 95, Xuefu Rd., Huwei Township, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=成大醫院斗六分院" target="_blank" rel="noopener">NCKU Hospital &ndash; Douliu Branch (成大醫院斗六分院) *</a> | No. 345, Zhuangjing Rd., Douliu City, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教若瑟醫院" target="_blank" rel="noopener">St. Joseph's Hospital (天主教若瑟醫院) *</a> | No. 74, Xinsheng Rd., Huwei Township, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林基督教醫院" target="_blank" rel="noopener">Yunlin Christian Hospital (雲林基督教醫院) *</a> | No. 375, Shichang S. Rd., Xiluo Township, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林長庚紀念醫院" target="_blank" rel="noopener">Yunlin Chang Gung Memorial Hospital (雲林長庚紀念醫院)</a> | No. 1500, Gongye Rd., Mailiao Township, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=中國醫藥大學北港附設醫院" target="_blank" rel="noopener">China Medical University Beigang Hospital (中國醫藥大學北港附設醫院) *</a> | No. 123, Xinde Rd., Beigang Township, Yunlin County</li>
+      </ul>
+    </div>
+  </details>
+  <p style="max-width:920px; margin:18px auto 0; text-align:center; font-size:14.5px;">Nationwide list of qualified hospitals: <a href="https://hrpts.osha.gov.tw/Home/CertifiedHospInfoSearch" target="_blank" rel="noopener" style="color:var(--purple); font-weight:700;">Ministry of Labor Certified Hospital Search</a></p>
+  <details class="detail-box">
+    <summary>Before Your Examination &amp; Examination Procedure</summary>
+    <div class="detail-body">
+      <p><b>Pre-examination notes</b> (conducted in accordance with the Occupational Safety and Health Act):</p>
+      <ul style="columns:1;">
+        <li>For 3 days before the exam, avoid staying up late, alcohol, stimulants, strong tea or coffee, raw meat, and seafood.</li>
+        <li>Wear light clothing; avoid underwear with buttons or metal, necklaces, and items in your shirt pocket, as they interfere with the X-ray.</li>
+        <li>Fast from 20:00 the night before (no food or water) &mdash; at least 6&ndash;8 hours of fasting &mdash; to avoid affecting test results.</li>
+        <li>If you wear glasses, bring them for the vision test.</li>
+        <li>If you are or may be pregnant, please inform the registration desk and do not take the X-ray.</li>
+        <li>For the urine test, collect midstream urine in the plastic cup, fill the test tube about 80%, and hand it to the nurse. If you are on your period or it ended less than a week ago, please tell the nurse.</li>
+        <li>Rest for 5 minutes and relax before your blood pressure is taken.</li>
+        <li>Relax during the blood draw; afterwards, press firmly on the site for 5 minutes and do not rub it.</li>
+        <li>During the hearing test, sounds go from loud to soft; use your finger to indicate left or right to the nurse.</li>
+      </ul>
+      <p><b>Examination procedure:</b> 01 Registration → 02 Height &amp; weight → 03 Blood pressure → 04 Vision &amp; color blindness → 05 Blood draw → 06 Hearing → 07 Urine → 08 X-ray → 09 Physician consultation → 10 Submit forms &amp; finish</p>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>Min-Sheng Hospital (Partner) &mdash; Contact &amp; Hours</summary>
+    <div class="detail-body">
+      <ul style="columns:1;">
+        <li><b>Jingguo Branch</b>: B1, No. 168, Jingguo Rd., Taoyuan City | (03)317-9599 #7121<br>Hours: Mon&ndash;Sat 08:30&ndash;11:00 / Mon&ndash;Fri 13:30&ndash;16:00</li>
+        <li><b>Longtan Branch</b>: No. 168, Zhongfeng Rd., Longtan Dist., Taoyuan City | (03)479-9099<br>Hours: Mon&ndash;Fri 08:30&ndash;11:00 &amp; 13:30&ndash;16:00 / Sat 08:30&ndash;11:00</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 當日流程 ===================== -->
+<section class="section" id="dayflow">
+  <div class="sec-head">
+    <div class="en">Your First Day</div>
+    <h2>Your First Day Schedule</h2>
+    <p class="lede">Here is your Day 1 schedule. Please arrive at the security gate a little early and gather in the lobby at 08:00.</p>
+  </div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-time">STEP 1</div><h3>Parking</h3><p>Park outside the plant. See <a href="#traffic" style="color:var(--purple); font-weight:600;">Parking &amp; Transportation</a>.</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 2</div><h3>Security Gate</h3><p><b>Arrive a little early</b> and let the guard know you are a new employee reporting for Day 1.</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 3</div><h3>Lobby</h3><p>Take a seat in the lobby after entering; <b>we gather at 08:00</b>.</p></div>
+    <div class="tl-item"><div class="tl-time">08:15&ndash;08:45</div><h3>Onboarding Paperwork</h3><p>Location: Training Room.</p></div>
+    <div class="tl-item"><div class="tl-time">08:45&ndash;09:30</div><h3>New Employee Orientation</h3><p>Location: Training Room.</p></div>
+    <div class="tl-item"><div class="tl-time">09:30&ndash;12:00</div><h3>EHS Training</h3><p>Location: Training Room.</p></div>
+    <div class="tl-item"><div class="tl-time">12:00&ndash;13:00</div><h3>Lunch &amp; Break</h3><p>Lunch and rest time.</p></div>
+    <div class="tl-item"><div class="tl-time">From 13:00</div><h3>Join Your Department</h3><p>Head to your department and meet your manager and teammates.</p></div>
+  </div>
+  <div class="cards" style="max-width:920px; margin:34px auto 0;">
+    <div class="card">
+      <h3><span class="icon">&#9200;</span>Arrival Time</h3>
+      <p><b>Arrive at the security gate early</b> and gather in the lobby at <b>08:00</b>.</p>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#128085;</span>Dress Code</h3>
+      <p><b>Neat attire or business casual</b> is fine; please avoid shorts and slippers.</p>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#127869;</span>Lunch</h3>
+      <p>Lunch is served in the <b>staff cafeteria</b> &mdash; no cash needed.</p>
+    </div>
+  </div>
+  <div class="notice">
+    <div>&#9432;</div>
+    <div>Exact times and meeting points are subject to your <b>offer letter / HR notice</b>; your recruiter will inform you of any changes.</div>
+  </div>
+</section>
+
+<!-- ===================== 交通停車 ===================== -->
+<section class="section" id="traffic">
+  <div class="sec-head">
+    <div class="en">Parking &amp; Transportation</div>
+    <h2>Parking &amp; Transportation</h2>
+    <p class="lede">All company parking requires prior application. On Day 1, please park according to the instructions for your plant below.</p>
+  </div>
+  <h3 class="flow-title">Taoyuan Headquarters &mdash; Jiandong Plant (建東廠)</h3>
+  <p class="plant-addr">No. 29, Jianguo E. Rd., Guishan Dist., Taoyuan City | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+建國東路29號" target="_blank" rel="noopener">Open in Google Maps</a></p>
+  <div class="cards">
+    <div class="card">
+      <h3><span class="icon">&#128663;</span>Day 1 Parking Steps</h3>
+      <ol>
+        <li>Tell HR in advance that you need parking</li>
+        <li>Check with the security gate on Day 1 whether a space is available</li>
+        <li>If none: cars should use an external parking lot; scooters may park in the area designated by the guard</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#127915;</span>Partner Parking Lot</h3>
+      <p><b>CarTing Tao-2 Lot (車亭桃2場)</b> | No. 28, Yanping Rd., Taoyuan Dist., Taoyuan City</p>
+      <ul>
+        <li>Fees (weekdays): scooters NT$20/day, cars NT$20/hour</li>
+        <li>Parking fees are at your own expense; about a 15&ndash;20 minute walk to the office</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#128652;</span>Public Transit</h3>
+      <ul>
+        <li><b>Train (TRA)</b>: from Taoyuan Station, about a 15&ndash;20 minute walk to the Taoyuan HQ (Jiandong Plant)</li>
+        <li><b>Bus</b>: use <a href="https://moovitapp.com/" target="_blank" rel="noopener">Moovit</a> for route planning</li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="flow-title">Longtan Science Park Plant (龍科廠)</h3>
+  <p class="plant-addr">No. 288, Longyuan 1st Rd., Longtan Dist., Taoyuan City | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+龍園一路288號" target="_blank" rel="noopener">Open in Google Maps</a></p>
+  <div class="cards">
+    <div class="card"><h3><span class="icon">01</span>Confirm with HR in Advance</h3><p>If you plan to drive or ride, please <b>confirm with HR before Day 1</b> so plant entry can be arranged.</p></div>
+    <div class="card"><h3><span class="icon">02</span>Day 1 Parking</h3><p>Park in the <b>open area across from Security Post No. 1</b>.</p></div>
+  </div>
+  <h3 class="flow-title">Yunlin Science Park Plant (雲科廠)</h3>
+  <p class="plant-addr">No. 29, Kegong 7th Rd., Douliu City, Yunlin County | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+科工七路29號" target="_blank" rel="noopener">Open in Google Maps</a></p>
+  <div class="cards">
+    <div class="card"><h3><span class="icon">01</span>Day 1 Parking</h3><p>Park along the <b>roadside next to the security post</b>; please park neatly.</p></div>
+    <div class="card"><h3><span class="icon">02</span>Parking Permit</h3><p>Apply for either a car or a scooter space; bring the originals and copies of your vehicle registration and driver's license on Day 1.</p></div>
+  </div>
+</section>
+
+<!-- ===================== 常見問題 ===================== -->
+<section class="section" id="faq">
+  <div class="sec-head"><div class="en">Frequently Asked Questions</div><h2>Frequently Asked Questions</h2><p class="lede">If you have any questions, check the answers below or contact the HR contact in your offer letter.</p></div>
+  <details class="detail-box"><summary>What if my health report has not arrived before Day 1?</summary><div class="detail-body"><p>If you were examined at a <b>partner hospital</b>, you can check in with the <b>examination receipt</b> first. Otherwise, keep your proof of examination and let HR know in advance to confirm how to proceed.</p></div></details>
+  <details class="detail-box"><summary>What if I do not have a CTBC or Mega Bank account?</summary><div class="detail-body"><p>Bring the first page of your offer letter to the bank to open one; please confirm the required documents and processing time with the bank first.</p></div></details>
+  <details class="detail-box"><summary>Can I still report if some documents are not ready?</summary><div class="detail-body"><p>Please tell HR before Day 1 which documents are missing and when you can provide them; HR will help confirm how to proceed.</p></div></details>
+  <details class="detail-box"><summary>Can I drive straight into the plant on Day 1?</summary><div class="detail-body"><p>Parking spaces require prior application. Please park according to your plant's instructions on this page and HR's notice; once you have your parking permit, you can enter as regulated.</p></div></details>
+  <details class="detail-box"><summary>What if I am delayed or need accessibility assistance?</summary><div class="detail-body"><p>Please contact the HR recruiter in your offer letter as early as possible with your estimated arrival time or the assistance you need, so we can arrange your reception.</p></div></details>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<div class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Have you filled in your Employee Information?</h2>
+    <p>To set up your access in advance, please complete it at least 7 days before your start date.</p>
+    <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">Fill in Employee Information</a>
+    <p style="margin-top:26px; font-size:16px; font-weight:700; color:#fff;">Once again, welcome to BenQ Materials!</p>
+  </div>
+</div>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="f-brand">BenQ Materials</div>
+  <div class="f-line"></div>
+  <p>Maintained by the BenQ Materials Human Resources Division.</p>
+  <p>For any onboarding questions, please contact the HR recruiter in your offer letter.</p>
+  <p>Want to know us better? <a href="https://www.benqmaterials.com/" target="_blank" rel="noopener">Visit the BenQ Materials official website</a></p>
+  <p class="legal">This site provides onboarding information only and does not collect or upload your ID, banking, or health data. The Employee Information button leads to the company's designated external form; data usage and retention are governed by that form's privacy notice. If anything differs, your offer letter and the latest HR notice prevail.</p>
+</footer>
+
+<script>
+// checklist progress with localStorage
+(function () {
+  var boxes = document.querySelectorAll('#checklist-items input[type="checkbox"]');
+  var bar = document.getElementById('progressBar');
+  var txt = document.getElementById('progressText');
+  var KEY = 'bmc-onboarding-checklist';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+
+  function refresh() {
+    var done = 0;
+    boxes.forEach(function (b) {
+      b.closest('.check-item').classList.toggle('done', b.checked);
+      if (b.checked) done++;
+    });
+    bar.style.width = (done / boxes.length * 100) + '%';
+    txt.textContent = 'Completed ' + done + ' / ' + boxes.length + (done === boxes.length ? " — you're all set!" : '');
+  }
+
+  boxes.forEach(function (b) {
+    if (saved[b.dataset.key]) b.checked = true;
+    b.addEventListener('change', function () {
+      saved[b.dataset.key] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+      refresh();
+    });
+  });
+  refresh();
+
+  // close mobile nav after tapping a link
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  var navToggle = document.getElementById('navToggle');
+  navToggle.addEventListener('click', function () {
+    var nav = document.getElementById('navLinks');
+    var isOpen = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // scrollspy: highlight the nav item for the section in view
+  var navMap = {};
+  document.querySelectorAll('#navLinks a[href^="#"]').forEach(function (a) {
+    navMap[a.getAttribute('href').slice(1)] = a;
+  });
+  var spied = Object.keys(navMap)
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+
+  function setActive(id) {
+    Object.keys(navMap).forEach(function (key) {
+      navMap[key].classList.toggle('active', key === id);
+    });
+  }
+
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { rootMargin: '-25% 0px -65% 0px', threshold: 0 });
+    spied.forEach(function (sec) { spy.observe(sec); });
+  }
+})();
+</script>
+</body>
+</html>

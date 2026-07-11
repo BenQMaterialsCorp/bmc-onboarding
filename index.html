@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>歡迎加入明基材料｜新人報到資訊</title>
+<meta name="description" content="明基材料新進人員報到資訊：報到前準備、攜帶文件、體檢資訊、當日流程與交通指南。">
+<style>
+:root {
+  --purple: #492582;
+  --purple-dark: #34195e;
+  --purple-light: #6d43b8;
+  --purple-pale: #f3eefb;
+  --ink: #2b2b33;
+  --gray: #6b6b76;
+  --line: #e6e1f0;
+  --bg: #faf9fc;
+  --white: #ffffff;
+  --gold: #c9a227;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(73, 37, 130, .08);
+  --shadow-lg: 0 8px 28px rgba(73, 37, 130, .14);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+  outline: 3px solid #f2c94c; outline-offset: 3px;
+}
+.skip-link {
+  position: fixed; left: 14px; top: -80px; z-index: 999;
+  background: #fff; color: var(--purple-dark); padding: 10px 16px;
+  border-radius: 8px; box-shadow: var(--shadow-lg); font-weight: 700;
+}
+.skip-link:focus { top: 12px; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-mark {
+  width: 34px; height: 34px; border-radius: 9px;
+  background: linear-gradient(135deg, var(--purple), var(--purple-light));
+  color: #fff; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 15px;
+  display: flex; align-items: center; justify-content: center;
+}
+.brand-name { font-weight: 700; font-size: 16px; color: var(--purple-dark); letter-spacing: .02em; }
+.brand-name small { display: block; font-size: 11px; font-weight: 500; color: var(--gray); letter-spacing: .08em; }
+.nav-links { display: flex; gap: 4px; list-style: none; }
+.nav-links a {
+  display: block; padding: 8px 14px; border-radius: 8px;
+  font-size: 14px; font-weight: 500; color: var(--ink); text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.nav-links a:hover { background: var(--purple-pale); color: var(--purple); }
+.nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--purple-dark); margin: 5px 0; border-radius: 2px; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(140deg, var(--purple-dark) 0%, var(--purple) 55%, var(--purple-light) 100%);
+  color: #fff; text-align: center;
+  padding: 84px 20px 96px;
+  position: relative; overflow: hidden;
+}
+.hero::before, .hero::after {
+  content: ""; position: absolute; border-radius: 50%;
+  background: rgba(255,255,255,.06);
+}
+.hero::before { width: 420px; height: 420px; top: -160px; right: -120px; }
+.hero::after { width: 300px; height: 300px; bottom: -140px; left: -100px; }
+.hero-badge {
+  display: inline-block; padding: 6px 18px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.4); font-size: 13px; letter-spacing: .2em;
+  margin-bottom: 22px; position: relative;
+}
+.hero h1 { font-size: clamp(30px, 5.4vw, 48px); font-weight: 900; letter-spacing: .06em; position: relative; }
+.hero p {
+  max-width: 560px; margin: 18px auto 0; font-size: clamp(15px, 2.4vw, 17px);
+  color: rgba(255,255,255,.88); position: relative;
+}
+.hero-cta {
+  margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;
+  text-decoration: none; transition: transform .15s, box-shadow .15s;
+  font-family: inherit; border: 0; cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-gold { background: #fff; color: var(--purple-dark); }
+.btn-ghost { border: 1.5px solid rgba(255,255,255,.6); color: #fff; }
+
+/* ---------- Key info bar ---------- */
+.keybar { max-width: 1080px; margin: -46px auto 0; padding: 0 20px; position: relative; z-index: 5; }
+.keybar-inner {
+  background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+.keybar-item { padding: 22px 24px; border-left: 1px solid var(--line); }
+.keybar-item:first-child { border-left: 0; }
+.keybar-item .k-label { font-size: 12px; letter-spacing: .14em; color: var(--gray); font-weight: 700; }
+.keybar-item .k-value { font-size: 16px; font-weight: 700; color: var(--purple-dark); margin-top: 4px; }
+.keybar-item .k-note { font-size: 13px; color: var(--gray); margin-top: 2px; }
+
+/* ---------- Location selector ---------- */
+.location-shell {
+  max-width: 1080px; margin: 42px auto 0; padding: 0 20px;
+}
+.location-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: 18px;
+  padding: 28px; box-shadow: var(--shadow); display: grid; gap: 22px;
+}
+.location-copy h2 { color: var(--purple-dark); font-size: 22px; }
+.location-copy p { color: var(--gray); font-size: 14px; margin-top: 4px; }
+.site-tabs { display: flex; flex-wrap: wrap; gap: 10px; }
+.site-tab {
+  border: 1px solid var(--line); background: var(--white); color: var(--purple-dark);
+  padding: 10px 17px; border-radius: 999px; cursor: pointer; font: inherit;
+  font-size: 14px; font-weight: 700;
+}
+.site-tab[aria-selected="true"] { background: var(--purple); color: #fff; border-color: var(--purple); }
+.site-summary {
+  display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: center;
+  background: var(--purple-pale); border-radius: 12px; padding: 18px 20px;
+}
+.site-summary strong { color: var(--purple-dark); display: block; }
+.site-summary span { color: var(--gray); font-size: 13px; }
+.site-summary a { color: var(--purple); font-weight: 700; font-size: 14px; }
+
+/* ---------- Task dashboard ---------- */
+.task-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.task-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px; text-decoration: none; color: var(--ink); box-shadow: var(--shadow);
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+}
+.task-card:hover { transform: translateY(-3px); border-color: #cbbbe4; box-shadow: var(--shadow-lg); }
+.task-kicker { font-size: 12px; color: var(--purple-light); font-weight: 700; letter-spacing: .08em; }
+.task-card h3 { font-size: 16px; color: var(--purple-dark); margin-top: 4px; }
+.task-card p { font-size: 13px; color: var(--gray); margin-top: 6px; }
+.task-card .task-link { display: block; color: var(--purple); font-size: 13px; font-weight: 700; margin-top: 14px; }
+
+/* ---------- Sections ---------- */
+.section { max-width: 1080px; margin: 0 auto; padding: 72px 20px 8px; }
+.sec-head { text-align: center; margin-bottom: 40px; }
+.sec-head .en {
+  font-family: "Poppins", sans-serif; font-size: 13px; font-weight: 600;
+  letter-spacing: .22em; color: var(--purple-light); text-transform: uppercase;
+}
+.sec-head h2 { font-size: clamp(24px, 4vw, 32px); font-weight: 900; color: var(--purple-dark); margin-top: 6px; }
+.sec-head .lede { max-width: 620px; margin: 12px auto 0; color: var(--gray); font-size: 15px; }
+
+/* ---------- Steps ---------- */
+.steps { display: grid; gap: 16px; }
+.step {
+  display: grid; grid-template-columns: 56px 1fr; gap: 18px;
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 24px; box-shadow: var(--shadow);
+}
+.step-no {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--purple-pale); color: var(--purple);
+  font-family: "Poppins", sans-serif; font-size: 20px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.step h3 { font-size: 17px; font-weight: 700; color: var(--purple-dark); }
+.step p, .step li { font-size: 14.5px; color: var(--ink); }
+.step .muted { color: var(--gray); font-size: 13.5px; }
+.step ul { padding-left: 20px; margin-top: 6px; }
+.step a { color: var(--purple); font-weight: 600; }
+
+/* ---------- Checklist ---------- */
+.check-progress {
+  max-width: 720px; margin: 0 auto 26px;
+  background: var(--white); border: 1px solid var(--line); border-radius: 999px;
+  padding: 6px; box-shadow: var(--shadow);
+}
+.check-progress-bar {
+  height: 12px; border-radius: 999px; width: 0%;
+  background: linear-gradient(90deg, var(--purple), var(--purple-light));
+  transition: width .3s ease;
+}
+.check-progress-text { text-align: center; font-size: 13px; color: var(--gray); margin-top: 8px; }
+.checklist { max-width: 720px; margin: 0 auto; display: grid; gap: 12px; }
+.check-item {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.check-item label {
+  display: grid; grid-template-columns: 26px 1fr; gap: 14px;
+  padding: 18px 20px; cursor: pointer; align-items: start;
+}
+.check-item input { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--purple); cursor: pointer; }
+.check-item .t { font-size: 15.5px; font-weight: 700; color: var(--purple-dark); }
+.check-item .d { font-size: 13.5px; color: var(--gray); margin-top: 2px; }
+.check-item .d a { color: var(--purple); font-weight: 600; }
+.check-item.done { background: var(--purple-pale); }
+.check-item.done .t { text-decoration: line-through; opacity: .6; }
+.check-hint { text-align: center; font-size: 12.5px; color: var(--gray); margin-top: 14px; }
+
+/* ---------- Cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 26px 22px; box-shadow: var(--shadow);
+}
+.card h3 {
+  font-size: 17px; font-weight: 700; color: var(--purple-dark);
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.card .icon {
+  width: 36px; height: 36px; border-radius: 10px; background: var(--purple-pale);
+  display: inline-flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.card p, .card li { font-size: 14.5px; }
+.card ul, .card ol { padding-left: 20px; }
+.card li { margin: 4px 0; }
+.card .muted { color: var(--gray); font-size: 13.5px; }
+.card a { color: var(--purple); font-weight: 600; }
+.tag {
+  display: inline-block; padding: 2px 10px; border-radius: 999px;
+  background: var(--purple-pale); color: var(--purple); font-size: 12px; font-weight: 700;
+}
+.detail-box {
+  max-width: 920px; margin: 18px auto 0; background: #fff;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+}
+.detail-box summary {
+  padding: 17px 20px; cursor: pointer; color: var(--purple-dark); font-weight: 700;
+  list-style-position: inside;
+}
+.detail-body { border-top: 1px solid var(--line); padding: 18px 20px; font-size: 14px; }
+.detail-body p + p, .detail-body ul + p { margin-top: 12px; }
+.detail-body ul { padding-left: 22px; columns: 2; column-gap: 32px; }
+.detail-body li { break-inside: avoid; margin: 5px 0; }
+.detail-body a { color: var(--purple); font-weight: 700; }
+.site-panel[hidden] { display: none; }
+
+/* ---------- Timeline ---------- */
+.timeline { max-width: 720px; margin: 0 auto; position: relative; padding-left: 30px; }
+.timeline::before {
+  content: ""; position: absolute; left: 9px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--line);
+}
+.tl-item { position: relative; padding: 0 0 26px 18px; }
+.tl-item::before {
+  content: ""; position: absolute; left: -27px; top: 7px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--white); border: 3.5px solid var(--purple);
+}
+.tl-item .tl-time { font-family: "Poppins", sans-serif; font-size: 13px; font-weight: 600; color: var(--purple-light); letter-spacing: .04em; }
+.tl-item h3 { font-size: 16.5px; font-weight: 700; color: var(--purple-dark); }
+.tl-item p { font-size: 14.5px; color: var(--gray); }
+
+/* ---------- Notice ---------- */
+.notice {
+  max-width: 1040px; margin: 26px auto 0;
+  background: #fff8e8; border: 1px solid #f0e2b6; border-radius: var(--radius);
+  padding: 18px 22px; font-size: 14px; color: #7a6320;
+  display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start;
+}
+.notice b { color: #5f4d15; }
+
+/* ---------- CTA banner ---------- */
+.cta-banner {
+  max-width: 1080px; margin: 72px auto 0; padding: 0 20px;
+}
+.cta-banner-inner {
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+  border-radius: 20px; color: #fff; text-align: center;
+  padding: 48px 28px; box-shadow: var(--shadow-lg);
+}
+.cta-banner h2 { font-size: clamp(20px, 3.4vw, 27px); font-weight: 900; }
+.cta-banner p { color: rgba(255,255,255,.85); font-size: 14.5px; margin-top: 10px; }
+.cta-banner .btn { margin-top: 24px; }
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 80px; background: var(--purple-dark); color: rgba(255,255,255,.8);
+  padding: 44px 20px 32px; text-align: center; font-size: 13.5px;
+}
+.footer .f-brand { font-weight: 700; font-size: 16px; color: #fff; letter-spacing: .05em; }
+.footer p { margin-top: 8px; }
+.footer .f-line { width: 44px; height: 3px; background: var(--purple-light); margin: 16px auto; border-radius: 2px; }
+.footer a { color: #fff; }
+.footer .legal { max-width: 700px; margin: 18px auto 0; font-size: 12px; color: rgba(255,255,255,.62); }
+
+/* ---------- RWD ---------- */
+@media (max-width: 860px) {
+  .task-grid { grid-template-columns: repeat(2, 1fr); }
+  .keybar-inner { grid-template-columns: 1fr; }
+  .keybar-item { border-left: 0; border-top: 1px solid var(--line); }
+  .keybar-item:first-child { border-top: 0; }
+  .nav-links {
+    display: none; position: absolute; top: 60px; left: 0; right: 0;
+    background: #fff; border-bottom: 1px solid var(--line);
+    flex-direction: column; padding: 10px 16px 16px;
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+}
+@media (max-width: 560px) {
+  .hero { padding: 66px 18px 84px; }
+  .task-grid { grid-template-columns: 1fr; }
+  .site-summary { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 44px 1fr; padding: 18px; gap: 12px; }
+  .detail-body ul { columns: 1; }
+  .location-card { padding: 22px 18px; }
+}
+@media print {
+  .nav, .hero-cta, .nav-toggle, .cta-banner, .site-tabs { display: none !important; }
+  .hero { padding: 24px; background: #fff; color: #222; }
+  .hero p { color: #444; }
+  .section { padding-top: 34px; }
+  .card, .step, .check-item, .location-card { box-shadow: none; break-inside: avoid; }
+  .detail-box { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要內容</a>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">BM</span>
+      <span class="brand-name">明基材料<small>BenQ Materials</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#prepare">報到前準備</a></li>
+      <li><a href="#checklist">攜帶資料</a></li>
+      <li><a href="#health">體檢資訊</a></li>
+      <li><a href="#dayflow">當日流程</a></li>
+      <li><a href="#traffic">交通停車</a></li>
+      <li><a href="#faq">常見問題</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <span class="hero-badge">WELCOME ABOARD</span>
+  <h1>歡迎加入明基材料</h1>
+  <p>從資料填寫、健康檢查到報到當日流程，這裡會陪你一步一步準備完成。</p>
+  <div class="hero-cta">
+    <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">填寫員工基本資料</a>
+    <a class="btn btn-ghost" href="#prepare">查看報到準備</a>
+  </div>
+</header>
+
+<!-- ===================== KEY INFO ===================== -->
+<div class="keybar">
+  <div class="keybar-inner">
+    <div class="keybar-item">
+      <div class="k-label">STEP 1・報到前一週</div>
+      <div class="k-value">完成員工基本資料填寫</div>
+      <div class="k-note">以便報到當天開通您的員工權限</div>
+    </div>
+    <div class="keybar-item">
+      <div class="k-label">STEP 2・報到前</div>
+      <div class="k-value">備妥文件與體檢報告</div>
+      <div class="k-note">攜帶資料清單見下方點檢表</div>
+    </div>
+    <div class="keybar-item">
+      <div class="k-label">STEP 3・報到當日</div>
+      <div class="k-value">依當日流程完成報到</div>
+      <div class="k-note">交通與停車方式請先確認</div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ===================== 廠區選擇 ===================== -->
+<section class="location-shell" aria-labelledby="locationTitle">
+  <div class="location-card">
+    <div class="location-copy">
+      <h2 id="locationTitle">先選擇你的報到廠區</h2>
+      <p>後續交通與當日流程會依廠區顯示；選擇只保存在你的裝置中。</p>
+    </div>
+    <div class="site-tabs" role="tablist" aria-label="報到廠區">
+      <button class="site-tab" type="button" role="tab" aria-selected="true" data-site="jiandong">桃園總部（建東廠）</button>
+      <button class="site-tab" type="button" role="tab" aria-selected="false" data-site="longtan">龍科廠</button>
+      <button class="site-tab" type="button" role="tab" aria-selected="false" data-site="yunlin">雲科廠</button>
+    </div>
+    <div class="site-summary" aria-live="polite">
+      <div><strong id="siteName">桃園總部（建東廠）</strong><span id="siteAddress">333 桃園市龜山區建國東路 29 號</span></div>
+      <a id="siteMap" href="https://www.google.com/maps/search/?api=1&query=明基材料+建國東路29號" target="_blank" rel="noopener">開啟地圖導航</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 任務儀表板 ===================== -->
+<section class="section" aria-labelledby="taskTitle">
+  <div class="sec-head">
+    <div class="en">Your Onboarding Tasks</div>
+    <h2 id="taskTitle">報到前完成這 4 件事</h2>
+    <p class="lede">照著順序準備，就不會漏掉重要資料。</p>
+  </div>
+  <div class="task-grid">
+    <a class="task-card" href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">
+      <span class="task-kicker">任務 01・最晚報到前 7 日</span><h3>填寫員工基本資料</h3><p>前往公司指定的線上表單，完成員工資料建檔。</p><span class="task-link">開啟官方表單 →</span>
+    </a>
+    <a class="task-card" href="#health"><span class="task-kicker">任務 02・提早安排</span><h3>完成新人健康檢查</h3><p>確認合格醫療機構、攜帶物品與報告有效期限。</p><span class="task-link">查看體檢資訊 →</span></a>
+    <a class="task-card" href="#checklist"><span class="task-kicker">任務 03・逐項備妥</span><h3>準備報到文件</h3><p>用互動點檢表核對影本、證明與適用文件。</p><span class="task-link">開始點檢 →</span></a>
+    <a class="task-card" href="#traffic"><span class="task-kicker">任務 04・報到前一日</span><h3>確認交通與集合方式</h3><p>依報到廠區確認導航、停車和警衛室報到方式。</p><span class="task-link">確認交通 →</span></a>
+  </div>
+</section>
+
+<!-- ===================== 報到前準備 ===================== -->
+<section class="section" id="prepare">
+  <div class="sec-head">
+    <div class="en">Before You Arrive</div>
+    <h2>報到前準備事項</h2>
+    <p class="lede">請您仔細閱讀以下資訊，並提前準備報到所需相關資料。</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-no">1</div>
+      <div>
+        <h3>員工資料建立</h3>
+        <p>請最晚於<b>報到日前 7 日</b>完成<a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">員工基本資料</a>填寫，以便報到當天建立員工檔案並開通必要權限。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">2</div>
+      <div>
+        <h3>報到資料準備</h3>
+        <p>請於報到前提前準備好相關文件，詳細內容請參閱<a href="#checklist">報到攜帶資料</a>。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">3</div>
+      <div>
+        <h3>自費勞工體檢</h3>
+        <p>醫院體檢需攜帶：</p>
+        <ul>
+          <li>身分證及健保卡正本</li>
+          <li>2 吋或 1 吋證件照片一張</li>
+          <li>自費體檢費用</li>
+        </ul>
+        <p class="muted">詳細說明請參閱<a href="#health">自費勞工體檢資訊</a>。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">4</div>
+      <div>
+        <h3>薪資帳戶開戶</h3>
+        <p>若無<b>中國信託</b>或<b>兆豐國際商銀</b>帳戶者，請出示錄取通知書至銀行開戶。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-no">5</div>
+      <div>
+        <h3>報到</h3>
+        <p>請參閱<a href="#dayflow">報到當日流程</a>，準時抵達即可，我們在公司等你！</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice">
+    <div>&#9998;</div>
+    <div><b>請先填寫基本資料：</b>為了提前開通您的權限，請最晚於報到日前 7 日完成 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener" style="color:#7a6320; font-weight:700; text-decoration:underline;">員工基本資料</a> 填寫。</div>
+  </div>
+</section>
+
+<!-- ===================== 攜帶資料點檢表 ===================== -->
+<section class="section" id="checklist">
+  <div class="sec-head">
+    <div class="en">Onboarding Checklist</div>
+    <h2>報到攜帶資料點檢表</h2>
+    <p class="lede">請準備齊全以下資料，以便辦理報到手續。勾選後會自動記住進度，可當作您的準備備忘錄。</p>
+  </div>
+
+  <div class="notice" style="margin-bottom:26px;">
+    <div>&#9888;</div>
+    <div><b>請務必主動配合提供相關必要個人文件。</b>文件未齊全，將視為報到手續未完成，並待文件完備後方能正式錄用。另可提供<b>電子檔證件照</b>，供識別證製作。</div>
+  </div>
+
+  <div class="check-progress"><div class="check-progress-bar" id="progressBar"></div></div>
+  <div class="check-progress-text" id="progressText">已完成 0 / 7 項</div>
+
+  <div class="checklist" id="checklist-items">
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c1">
+        <span>
+          <span class="t">員工基本資料（線上填寫）</span>
+          <span class="d">請至<a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">員工基本資料表單</a>填寫，最晚於報到日前 7 日完成，以便當天順利開通您的員工權限。</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c2">
+        <span>
+          <span class="t">身分證正反面影本乙份</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c3">
+        <span>
+          <span class="t">體檢報告（三個月內），或特約醫院之體檢收據</span>
+          <span class="d">請提供三個月內<b>區域型以上醫院</b>之體檢報告，或特約醫院之體檢收據；診所的體檢報告恕不接受。相關細節請參考<a href="#health">自費勞工體檢資訊</a>。</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c4">
+        <span>
+          <span class="t">中國信託或兆豐國際商銀存摺影本</span>
+          <span class="d">若無帳戶者，請出示錄取通知書第一頁至銀行開戶。公司合作薪資銀行每月免手續費優惠——【兆豐】跨行提款 10 次、轉帳 10 次；【中信】跨行提款 30 次、轉帳 15 次。</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c5">
+        <span>
+          <span class="t">最高學歷證明（正本 + 影本乙份）</span>
+          <span class="d">正本文件將於報到當天核對後立即歸還。</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c6">
+        <span>
+          <span class="t">離職證明書或經歷文件</span>
+          <span class="d">若有其他工作經驗者，請提供最近一份工作的離職證明書或其他經歷證明文件（如勞健保轉出單）；新鮮人或無承認年資者則無需提供。</span>
+        </span>
+      </label>
+    </div>
+    <div class="check-item">
+      <label>
+        <input type="checkbox" data-key="c7">
+        <span>
+          <span class="t">汽機車停車申請文件（行照＋駕照，正本及影本）</span>
+          <span class="d">汽機車位每人擇一申請，請於報到當天攜帶行照及個人駕照的正本及影本進行申請。公司內停車位皆需事前申請，報到當天請先將交通工具停放於公司外，詳見<a href="#traffic">停車／交通資訊</a>；取得停車證後即可憑證進出公司停車場。</span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <p class="check-hint">進度僅儲存於您自己的瀏覽器中，不會上傳任何資料。</p>
+</section>
+
+<!-- ===================== 體檢資訊 ===================== -->
+<section class="section" id="health">
+  <div class="sec-head">
+    <div class="en">Health Examination</div>
+    <h2>自費勞工體檢資訊</h2>
+    <p class="lede">依據勞工安全衛生法相關規定，請您於入職前前往<b>區域型以上醫院</b>或建議醫院進行體檢。</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3><span class="icon">&#128203;</span>醫院體檢攜帶</h3>
+      <ul>
+        <li>身分證及健保卡正本</li>
+        <li>2 吋或 1 吋<b>近六個月</b>證件照片一張</li>
+        <li>自費體檢費用</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#127973;</span>醫院資格</h3>
+      <p><b>診所的體檢報告恕不接受。</b>請選擇區域型以上醫院或下方建議醫院；建議優先選擇<span class="tag">特約醫院</span>，享優惠費用。</p>
+    </div>
+    <div class="card">
+      <h3><span class="icon">&#9200;</span>可免再次體檢</h3>
+      <p>若您持有<b>三個月內</b>由區域等級以上醫院出具的體檢報告，則可免除再次體檢。</p>
+    </div>
+  </div>
+  <details class="detail-box">
+    <summary>體檢費用說明</summary>
+    <div class="detail-body">
+      <p><b>特約醫院：</b></p>
+      <ul style="columns:1;">
+        <li><b>敏盛醫院</b>：一般體檢費用每人 750 元（實際費用以當年度收費標準為準，2025 年為 850 元）；特檢費用依項目不同，約 250–650 元。敏盛龍潭院區無提供特檢服務，如需特檢請前往經國院區或其他建議醫院。</li>
+        <li><b>德仁醫院</b>：費用 700 元，僅做一般體檢。</li>
+        <li><b>華揚醫院</b>：費用 580 元，僅做一般體檢。</li>
+      </ul>
+      <p><b>非特約醫院：</b>一般體檢費用約每人 850 元（以各級醫院當年度收費標準為準）；特檢費用依項目不同，約 250–650 元。</p>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>桃園_體檢醫院名單（點醫院名稱可開啟 Google 地圖）</summary>
+    <div class="detail-body">
+      <p><b>特約醫院（享優惠費用，建議優先選擇）：</b></p>
+      <ul style="columns:1;">
+        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院經國院區" target="_blank" rel="noopener">敏盛綜合醫院－經國院區</a>｜330 桃園市桃園區經國路 168 號｜具特檢服務；健檢資訊將提供公司作健康管理</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院龍潭院區" target="_blank" rel="noopener">敏盛綜合醫院－龍潭院區</a>｜325 桃園市龍潭區中豐路 168 號｜無特檢服務；健檢資訊將提供公司作健康管理</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=德仁醫院+桃園市桃鶯路245號" target="_blank" rel="noopener">德仁醫院</a>｜330 桃園市桃鶯路 245 號｜無特檢服務</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=華揚醫院+中壢區中北路二段316號" target="_blank" rel="noopener">華揚醫院</a>｜320 桃園市中壢區中北路二段 316 號｜無特檢服務</li>
+      </ul>
+      <p><b>其他建議醫院：</b>（標示 * 者具特檢服務）</p>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=國軍桃園總醫院" target="_blank" rel="noopener">國軍桃園總醫院 *</a>｜325 桃園市龍潭區中興路 168 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院" target="_blank" rel="noopener">衛生福利部桃園醫院 *</a>｜330 桃園市桃園區中山路 1492 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院新屋分院" target="_blank" rel="noopener">桃園醫院新屋分院</a>｜327 桃園市新屋區新福二路 6 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=台北榮民總醫院桃園分院" target="_blank" rel="noopener">台北榮總桃園分院 *</a>｜330 桃園市桃園區成功路三段 100 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天晟醫院" target="_blank" rel="noopener">天晟醫院 *</a>｜320 桃園市中壢區延平路 155 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教聖保祿醫院" target="_blank" rel="noopener">天主教聖保祿醫院 *</a>｜330 桃園市桃園區建新街 123 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=林口長庚紀念醫院" target="_blank" rel="noopener">林口長庚紀念醫院 *</a>｜333 桃園市龜山區復興街 5 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=桃園長庚醫院" target="_blank" rel="noopener">桃園長庚醫院</a>｜333 桃園市龜山區頂湖路 123 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=怡仁綜合醫院" target="_blank" rel="noopener">怡仁綜合醫院 *</a>｜326 桃園市楊梅區楊新北路 321 巷 30 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=聯新國際醫院" target="_blank" rel="noopener">聯新國際醫院 *</a>｜324 桃園市平鎮區廣泰路 77 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=楊梅天成醫院" target="_blank" rel="noopener">楊梅天成醫院 *</a>｜326 桃園市楊梅區中山北路一段 356 號</li>
+      </ul>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>雲林_體檢醫院名單（點醫院名稱可開啟 Google 地圖）</summary>
+    <div class="detail-body">
+      <p>標示 * 者具特檢服務。</p>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院斗六院區" target="_blank" rel="noopener">臺大醫院雲林分院－斗六院區 *</a>｜640 雲林縣斗六市雲林路二段 579 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院虎尾院區" target="_blank" rel="noopener">臺大醫院雲林分院－虎尾院區</a>｜632 雲林縣虎尾鎮學府路 95 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=成大醫院斗六分院" target="_blank" rel="noopener">成大醫院－斗六分院 *</a>｜640 雲林縣斗六市莊敬路 345 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教若瑟醫院" target="_blank" rel="noopener">天主教若瑟醫院 *</a>｜632 雲林縣虎尾鎮新生路 74 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林基督教醫院" target="_blank" rel="noopener">雲林基督教醫院 *</a>｜648 雲林縣西螺鎮市場南路 375 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林長庚紀念醫院" target="_blank" rel="noopener">雲林長庚紀念醫院</a>｜63862 雲林縣麥寮鄉工業路 1500 號</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=中國醫藥大學北港附設醫院" target="_blank" rel="noopener">中國醫藥大學北港附設醫院 *</a>｜651 雲林縣北港鎮新德路 123 號</li>
+      </ul>
+      <p>各縣市體檢醫院清單：<a href="https://hrpts.osha.gov.tw/Home/CertifiedHospInfoSearch" target="_blank" rel="noopener">勞動部認可醫療機構查詢 →</a></p>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>體檢前注意事項與體檢流程</summary>
+    <div class="detail-body">
+      <p><b>新人體格檢查注意事項</b>（依勞工安全衛生法相關規定施行）：</p>
+      <ul style="columns:1;">
+        <li>健檢前三日避免熬夜、喝酒、刺激品、濃茶、濃咖啡、生肉、海鮮。</li>
+        <li>請穿著輕便服裝，勿穿有釦子、金屬之內衣或配戴項鍊，上衣口袋勿放置任何物品，以免影響 X 光檢查。</li>
+        <li>請於健檢前一日 20:00 以後禁食（包括水和食物），空腹時間至少滿 6–8 小時，以免影響檢查數值。</li>
+        <li>配戴眼鏡者請攜帶眼鏡以便檢查視力。</li>
+        <li>懷孕或可能懷孕婦女請務必告知報到處，請勿照 X 光。</li>
+        <li>尿液檢查請以塑膠杯盛取中段尿，再將尿液倒進尿液試管約八分滿，交給護理人員；女性同仁遇生理期或未滿一週者，請告知收集尿液之護理人員。</li>
+        <li>量血壓前，請先休息 5 分鐘，並放鬆心情。</li>
+        <li>抽血時放鬆心情，抽血後緊壓抽血處 5 分鐘，不可揉抽血處。</li>
+        <li>聽力檢測時聲音由大到小，並用手指告知護理人員左邊或右邊。</li>
+      </ul>
+      <p><b>體檢流程關卡：</b>01 報到 → 02 身高體重 → 03 血壓 → 04 視力、色盲 → 05 抽血 → 06 聽力 → 07 尿液 → 08 X 光檢查 → 09 醫師診察 → 10 繳表完成體檢</p>
+    </div>
+  </details>
+  <details class="detail-box">
+    <summary>敏盛醫院（特約醫院）聯絡資訊與檢查時間</summary>
+    <div class="detail-body">
+      <ul style="columns:1;">
+        <li><b>經國院區</b>：桃園市經國路 168 號 B1｜(03)317-9599 #7121<br>檢查時間：週一至週六 08:30–11:00／週一至週五 13:30–16:00</li>
+        <li><b>龍潭院區</b>：桃園市龍潭區中豐路 168 號｜(03)479-9099<br>檢查時間：週一至週五 08:30–11:00、13:30–16:00／週六 08:30–11:00</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 當日流程 ===================== -->
+<section class="section" id="dayflow">
+  <div class="sec-head">
+    <div class="en">Your First Day</div>
+    <h2>報到當日流程</h2>
+    <p class="lede">報到當天的行程安排如下，請依錄取通知的時間準時抵達。</p>
+  </div>
+  <div class="timeline site-panel" data-panel="jiandong">
+    <div class="tl-item"><div class="tl-time">STEP 1</div><h3>停車</h3><p>於公司外停妥車輛，相關資訊詳見<a href="#traffic" style="color:var(--purple); font-weight:600;">停車／交通資訊</a>。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 2</div><h3>警衛室</h3><p>請告知警衛您是前來報到的新進員工。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 3</div><h3>大廳等候</h3><p>進入大廳後，請至大廳座位區等候。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 4</div><h3>介紹廠區</h3><p>HR 將帶領新進員工參觀並介紹廠區。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 5</div><h3>換鞋入廠</h3><p>進入廠區前，將先至換鞋區換公司提供的拖鞋後進入廠區。</p></div>
+    <div class="tl-item"><div class="tl-time">08:15–08:45</div><h3>紙本文件填寫</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">08:45–09:30</div><h3>新人導引</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">09:30–12:00</div><h3>環安衛課程</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">12:00–13:00</div><h3>用餐＆休息</h3><p>用餐與休息時間。</p></div>
+    <div class="tl-item"><div class="tl-time">13:00 起</div><h3>回各部門上班</h3><p>分配至部門，認識主管及工作夥伴。</p></div>
+  </div>
+  <div class="timeline site-panel" data-panel="longtan" hidden>
+    <div class="tl-item"><div class="tl-time">STEP 1</div><h3>停車</h3><p>於公司外停妥車輛，相關資訊詳見<a href="#traffic" style="color:var(--purple); font-weight:600;">停車／交通資訊</a>。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 2</div><h3>警衛室</h3><p>請告知警衛您是前來報到的新進員工。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 3</div><h3>大廳等候</h3><p>進入大廳後，請至大廳座位區等候。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 4</div><h3>介紹廠區</h3><p>HR 將帶領新進員工參觀並介紹廠區。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 5</div><h3>換鞋入廠</h3><p>進入廠區前，將先至換鞋區換公司提供的拖鞋後進入廠區。</p></div>
+    <div class="tl-item"><div class="tl-time">08:15–08:45</div><h3>紙本文件填寫</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">08:45–09:30</div><h3>新人導引</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">09:30–12:00</div><h3>環安衛課程</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">12:00–13:00</div><h3>用餐＆休息</h3><p>用餐與休息時間。</p></div>
+    <div class="tl-item"><div class="tl-time">13:00 起</div><h3>回各部門上班</h3><p>分配至部門，認識主管及工作夥伴。</p></div>
+  </div>
+  <div class="timeline site-panel" data-panel="yunlin" hidden>
+    <div class="tl-item"><div class="tl-time">STEP 1</div><h3>停車</h3><p>於公司外停妥車輛，相關資訊詳見<a href="#traffic" style="color:var(--purple); font-weight:600;">停車／交通資訊</a>。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 2</div><h3>警衛室</h3><p>告知警衛為欲報到新人。</p></div>
+    <div class="tl-item"><div class="tl-time">STEP 3</div><h3>大廳等候</h3><p>進入大廳，至大廳座位等候。</p></div>
+    <div class="tl-item"><div class="tl-time">08:15–08:45</div><h3>紙本文件填寫</h3><p>地點：教育訓練室。紙本文件資料填寫。</p></div>
+    <div class="tl-item"><div class="tl-time">08:45–09:30</div><h3>新人導引</h3><p>地點：教育訓練室。進行新人導引課程。</p></div>
+    <div class="tl-item"><div class="tl-time">09:30–11:30</div><h3>環安衛課程</h3><p>地點：教育訓練室。</p></div>
+    <div class="tl-item"><div class="tl-time">11:30–13:00</div><h3>用餐＆休息</h3><p>用餐與休息時間。</p></div>
+    <div class="tl-item"><div class="tl-time">13:00 起</div><h3>回各部門上班</h3><p>由部門助理帶回，認識工作夥伴。</p></div>
+  </div>
+  <div class="notice">
+    <div>&#9432;</div>
+    <div>當日詳細時間與集合地點以<b>錄取通知信／HR 通知</b>為準；如有異動將由您的招募窗口另行通知。</div>
+  </div>
+</section>
+
+<!-- ===================== 交通停車 ===================== -->
+<section class="section" id="traffic">
+  <div class="sec-head">
+    <div class="en">Parking &amp; Transportation</div>
+    <h2>停車／交通資訊</h2>
+    <p class="lede">公司內汽機車停車位皆需事前申請，報到當天請先將交通工具停放於公司外。</p>
+  </div>
+  <div class="site-panel" data-panel="jiandong">
+    <div class="cards">
+      <div class="card">
+        <h3><span class="icon">&#128663;</span>報到當天入廠停車步驟</h3>
+        <ol>
+          <li>提前告知 HR 停車需求</li>
+          <li>報到當日於警衛室確認廠內是否有車位</li>
+          <li>倘若無車位：汽車須駛於外部停車場／停車位停放；機車可停放於警衛指定區域</li>
+        </ol>
+        <p class="muted">建東廠（總部）汽機車可至廠區內／外部停車場停放車輛。</p>
+      </div>
+      <div class="card">
+        <h3><span class="icon">&#127915;</span>外部停車場資訊</h3>
+        <p><b>車亭桃 2 場</b>｜330 桃園市桃園區延平路 28 號</p>
+        <ul>
+          <li>費用：機車平日 20 元／天，汽車平日 20 元／小時</li>
+          <li>停車費用由個人自付，步行至公司約 15–20 分鐘</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">&#128652;</span>大眾運輸</h3>
+        <ul>
+          <li><b>台鐵</b>：桃園火車站下車，步行至公司（桃園總部＿建東廠）約需 15–20 分鐘</li>
+          <li><b>公車</b>：可使用 <a href="https://moovitapp.com/" target="_blank" rel="noopener">Moovit</a> 進行路線規劃</li>
+        </ul>
+        <p class="muted">建東廠地址：333 桃園市龜山區建國東路 29 號</p>
+      </div>
+    </div>
+  </div>
+  <div class="site-panel" data-panel="longtan" hidden>
+    <div class="cards">
+      <div class="card"><h3><span class="icon">01</span>報到前先與 HR 確認</h3><p>開車或騎車須於<b>報到前與 HR 確認</b>，以利後續入廠申請。</p></div>
+      <div class="card"><h3><span class="icon">02</span>報到當日停放</h3><p>請停放於<b>一號哨對面的空地</b>。</p></div>
+      <div class="card"><h3><span class="icon">03</span>廠區地址</h3><p>325 桃園市龍潭區龍園一路 288 號。</p></div>
+    </div>
+  </div>
+  <div class="site-panel" data-panel="yunlin" hidden>
+    <div class="cards">
+      <div class="card"><h3><span class="icon">01</span>報到當日停放</h3><p>請於<b>警衛哨旁路邊停車</b>，車輛需停放整齊。</p></div>
+      <div class="card"><h3><span class="icon">02</span>停車證申請</h3><p>汽機車位每人擇一申請，報到當天攜帶行照及個人駕照正本及影本辦理。</p></div>
+      <div class="card"><h3><span class="icon">03</span>廠區地址</h3><p>640 雲林縣斗六市科工七路 29 號。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 常見問題 ===================== -->
+<section class="section" id="faq">
+  <div class="sec-head"><div class="en">Frequently Asked Questions</div><h2>常見問題</h2><p class="lede">如果你的情況不同，請直接聯繫錄取通知中的 HR 窗口。</p></div>
+  <details class="detail-box"><summary>體檢報告在報到日前還沒收到怎麼辦？</summary><div class="detail-body"><p>於<b>特約醫院</b>體檢者，可先以<b>體檢收據</b>辦理報到；於其他醫院體檢者，請保留受檢證明並提前告知 HR 確認處理方式。</p></div></details>
+  <details class="detail-box"><summary>目前沒有中國信託或兆豐銀行帳戶怎麼辦？</summary><div class="detail-body"><p>可攜帶錄取通知書至銀行辦理開戶；開戶所需文件與時間請先向銀行確認。</p></div></details>
+  <details class="detail-box"><summary>文件來不及備齊，可以先報到嗎？</summary><div class="detail-body"><p>請不要自行判斷，應在報到前主動告知 HR 缺少的文件及預計補交日期，由 HR 確認處理方式。</p></div></details>
+  <details class="detail-box"><summary>報到當天可以直接把車開進公司嗎？</summary><div class="detail-body"><p>原則上停車位須事前申請。請依本頁所選廠區說明及 HR 通知停放，取得停車證後再依規定進出。</p></div></details>
+  <details class="detail-box"><summary>遇到交通延誤或需要無障礙協助怎麼辦？</summary><div class="detail-body"><p>請儘早聯絡錄取通知中的 HR 招募窗口，說明預計抵達時間或所需協助，以便安排接待。</p></div></details>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<div class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>還沒填寫員工基本資料嗎？</h2>
+    <p>為了提前開通您的權限，請最晚於報到日前 7 日完成填寫。</p>
+    <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener">前往填寫員工基本資料</a>
+    <p style="margin-top:26px; font-size:16px; font-weight:700; color:#fff;">最後，再次歡迎您加入明基材料！</p>
+  </div>
+</div>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="f-brand">明基材料 BenQ Materials</div>
+  <div class="f-line"></div>
+  <p>本頁面由明基材料人力資源處維護。</p>
+  <p>如對報到事項有任何疑問，請聯繫您錄取通知信中的 HR 招募窗口。</p>
+  <p>內容版本：2026-07-11｜內容負責單位：人力資源處</p>
+  <p class="legal">本網站僅提供報到資訊，不會收集或上傳您的身分證、銀行或健康資料。點選員工基本資料後將前往公司指定的外部表單；實際資料用途與保存方式以該表單的個資告知事項為準。報到時間與規定如有差異，以錄取通知及 HR 最新通知為準。</p>
+</footer>
+
+<script>
+// checklist progress with localStorage
+(function () {
+  var boxes = document.querySelectorAll('#checklist-items input[type="checkbox"]');
+  var bar = document.getElementById('progressBar');
+  var txt = document.getElementById('progressText');
+  var KEY = 'bmc-onboarding-checklist';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+
+  function refresh() {
+    var done = 0;
+    boxes.forEach(function (b) {
+      b.closest('.check-item').classList.toggle('done', b.checked);
+      if (b.checked) done++;
+    });
+    bar.style.width = (done / boxes.length * 100) + '%';
+    txt.textContent = '已完成 ' + done + ' / ' + boxes.length + ' 項' + (done === boxes.length ? '，準備就緒！' : '');
+  }
+
+  boxes.forEach(function (b) {
+    if (saved[b.dataset.key]) b.checked = true;
+    b.addEventListener('change', function () {
+      saved[b.dataset.key] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+      refresh();
+    });
+  });
+  refresh();
+
+  // close mobile nav after tapping a link
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  var navToggle = document.getElementById('navToggle');
+  navToggle.addEventListener('click', function () {
+    var nav = document.getElementById('navLinks');
+    var isOpen = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  var sites = {
+    jiandong: { name: '桃園總部（建東廠）', address: '333 桃園市龜山區建國東路 29 號', map: 'https://www.google.com/maps/search/?api=1&query=明基材料+建國東路29號' },
+    longtan: { name: '龍科廠', address: '325 桃園市龍潭區龍園一路 288 號', map: 'https://www.google.com/maps/search/?api=1&query=明基材料+龍園一路288號' },
+    yunlin: { name: '雲科廠', address: '640 雲林縣斗六市科工七路 29 號', map: 'https://www.google.com/maps/search/?api=1&query=明基材料+科工七路29號' }
+  };
+  var siteKey = 'bmc-onboarding-site';
+  var currentSite = 'jiandong';
+  try { currentSite = localStorage.getItem(siteKey) || currentSite; } catch (e) {}
+  if (!sites[currentSite]) currentSite = 'jiandong';
+
+  function setSite(key) {
+    currentSite = key;
+    document.querySelectorAll('.site-tab').forEach(function (button) {
+      button.setAttribute('aria-selected', String(button.dataset.site === key));
+    });
+    document.querySelectorAll('.site-panel').forEach(function (panel) {
+      panel.hidden = panel.dataset.panel !== key;
+    });
+    document.getElementById('siteName').textContent = sites[key].name;
+    document.getElementById('siteAddress').textContent = sites[key].address;
+    document.getElementById('siteMap').href = sites[key].map;
+    try { localStorage.setItem(siteKey, key); } catch (e) {}
+  }
+  document.querySelectorAll('.site-tab').forEach(function (button) {
+    button.addEventListener('click', function () { setSite(button.dataset.site); });
+  });
+  setSite(currentSite);
+})();
+</script>
+</body>
+</html>

@@ -60,6 +60,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .nav-links a {
   display: block; padding: 8px 14px; border-radius: 8px;
   font-size: 14px; font-weight: 500; color: var(--ink); text-decoration: none;
+  white-space: nowrap;
   transition: background .15s, color .15s;
 }
 .nav-links a:hover { background: var(--purple-pale); color: var(--purple); }
@@ -70,6 +71,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .lang-switch {
   display: inline-block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
   font-size: 13px; font-weight: 700; color: var(--purple-dark); text-decoration: none;
+  white-space: nowrap;
   transition: background .15s, color .15s, border-color .15s;
 }
 .lang-switch:hover { background: var(--purple); border-color: var(--purple); color: #fff; }
@@ -290,7 +292,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .footer .legal { max-width: 700px; margin: 18px auto 0; font-size: 12px; color: rgba(255,255,255,.62); }
 
 /* ---------- RWD ---------- */
-@media (max-width: 860px) {
+@media (max-width: 1040px) {
   .task-grid { grid-template-columns: repeat(2, 1fr); }
   .keybar-inner { grid-template-columns: 1fr; }
   .keybar-item { border-left: 0; border-top: 1px solid var(--line); }
@@ -399,7 +401,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 <!-- ===================== 報到前準備 ===================== -->
 <section class="section" id="prepare">
   <div class="sec-head">
-    <div class="en">Before You Arrive</div>
+    <div class="en">Getting Ready</div>
     <h2>Before You Arrive</h2>
     <p class="lede">Please read the following carefully and prepare the required documents in advance.</p>
   </div>
@@ -448,7 +450,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   </div>
 
   <div class="notice">
-    <div>&#9998;</div>
+    <div aria-hidden="true">&#9998;</div>
     <div><b>Don't forget:</b> to set up your access in advance, please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener" style="color:#7a6320; font-weight:700; text-decoration:underline;">Employee Information form</a> at least 7 days before your start date.</div>
   </div>
 </section>
@@ -462,8 +464,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   </div>
 
   <div class="notice" style="margin-bottom:26px;">
-    <div>&#9888;</div>
-    <div><b>Please bring all of the following documents on Day 1.</b> If any document is missing, onboarding cannot be completed until it is provided. A <b>digital ID photo</b> is welcome for your employee badge (just show it on Day 1). <b>No personal seal (chop) is needed.</b></div>
+    <div aria-hidden="true">&#9888;</div>
+    <div><b>Please bring all of the following documents on Day 1.</b> If any document is missing, your onboarding will be put on hold, and your employment can only be finalized once the missing documents are provided. A <b>digital ID photo</b> is welcome for your employee badge (just show it on Day 1). <b>No personal seal (chop) is needed.</b></div>
   </div>
 
   <div class="check-progress"><div class="check-progress-bar" id="progressBar"></div></div>
@@ -540,13 +542,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 <!-- ===================== 體檢資訊 ===================== -->
 <section class="section" id="health">
   <div class="sec-head">
-    <div class="en">Health Examination</div>
+    <div class="en">Your Health Check</div>
     <h2>Health Examination Information</h2>
     <p class="lede">In accordance with the Occupational Safety and Health Act, please complete a health examination at a <b>regional-level (or higher) hospital</b> or one of the recommended hospitals before your start date.</p>
   </div>
   <div class="cards">
     <div class="card">
-      <h3><span class="icon">&#128203;</span>What to Bring</h3>
+      <h3><span class="icon" aria-hidden="true">&#128203;</span>What to Bring</h3>
       <ul>
         <li>Original passport or ARC (and NHI card, if available)</li>
         <li>One 2-inch or 1-inch ID photo taken <b>within 6 months</b></li>
@@ -554,11 +556,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       </ul>
     </div>
     <div class="card">
-      <h3><span class="icon">&#127973;</span>Hospital Requirements</h3>
+      <h3><span class="icon" aria-hidden="true">&#127973;</span>Hospital Requirements</h3>
       <p><b>Clinic reports are not accepted.</b> Please choose a regional-level (or higher) hospital or one listed below; <span class="tag">partner hospitals</span> are recommended for discounted rates.</p>
     </div>
     <div class="card">
-      <h3><span class="icon">&#9200;</span>Already Have a Report?</h3>
+      <h3><span class="icon" aria-hidden="true">&#9200;</span>Already Have a Report?</h3>
       <p>If you already have a report issued <b>within the last 3 months</b> by a regional-level (or higher) hospital, you do not need another examination.</p>
     </div>
   </div>
@@ -579,24 +581,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
     <div class="detail-body">
       <p><b>Partner hospitals (discounted rates, recommended):</b></p>
       <ul style="columns:1;">
-        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院經國院區" target="_blank" rel="noopener">Min-Sheng General Hospital &ndash; Jingguo Branch (敏盛綜合醫院經國院區)</a> | No. 168, Jingguo Rd., Taoyuan Dist., Taoyuan City | Offers special examination items; results are provided to the company for employee health management</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院龍潭院區" target="_blank" rel="noopener">Min-Sheng General Hospital &ndash; Longtan Branch (敏盛綜合醫院龍潭院區)</a> | No. 168, Zhongfeng Rd., Longtan Dist., Taoyuan City | No special examination items; results are provided to the company for employee health management</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=德仁醫院+桃園市桃鶯路245號" target="_blank" rel="noopener">Te-Jen Hospital (德仁醫院)</a> | No. 245, Taoying Rd., Taoyuan Dist., Taoyuan City | No special examination items</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=華揚醫院+中壢區中北路二段316號" target="_blank" rel="noopener">Hua Yang Hospital (華揚醫院)</a> | No. 316, Sec. 2, Zhongbei Rd., Zhongli Dist., Taoyuan City | No special examination items</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院經國院區" target="_blank" rel="noopener">Min-Sheng General Hospital &ndash; Jingguo Branch (敏盛綜合醫院經國院區)</a> | No. 168, Jingguo Rd., Taoyuan Dist., Taoyuan City 330 | Offers special examination items; results are provided to the company for employee health management</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院龍潭院區" target="_blank" rel="noopener">Min-Sheng General Hospital &ndash; Longtan Branch (敏盛綜合醫院龍潭院區)</a> | No. 168, Zhongfeng Rd., Longtan Dist., Taoyuan City 325 | No special examination items; results are provided to the company for employee health management</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=德仁醫院+桃園市桃鶯路245號" target="_blank" rel="noopener">Te-Jen Hospital (德仁醫院)</a> | No. 245, Taoying Rd., Taoyuan Dist., Taoyuan City 330 | No special examination items</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=華揚醫院+中壢區中北路二段316號" target="_blank" rel="noopener">Hua Yang Hospital (華揚醫院)</a> | No. 316, Sec. 2, Zhongbei Rd., Zhongli Dist., Taoyuan City 320 | No special examination items</li>
       </ul>
       <p><b>Other recommended hospitals</b> (* = offers special examination items):</p>
       <ul>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=國軍桃園總醫院" target="_blank" rel="noopener">Taoyuan Armed Forces General Hospital (國軍桃園總醫院) *</a> | No. 168, Zhongxing Rd., Longtan Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院" target="_blank" rel="noopener">Taoyuan General Hospital, MOHW (衛生福利部桃園醫院) *</a> | No. 1492, Zhongshan Rd., Taoyuan Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院新屋分院" target="_blank" rel="noopener">Taoyuan General Hospital &ndash; Xinwu Branch (桃園醫院新屋分院)</a> | No. 6, Xinfu 2nd Rd., Xinwu Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=台北榮民總醫院桃園分院" target="_blank" rel="noopener">Taipei Veterans General Hospital &ndash; Taoyuan Branch (台北榮總桃園分院) *</a> | No. 100, Sec. 3, Chenggong Rd., Taoyuan Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=天晟醫院" target="_blank" rel="noopener">Ten-Chen Hospital (天晟醫院) *</a> | No. 155, Yanping Rd., Zhongli Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教聖保祿醫院" target="_blank" rel="noopener">St. Paul's Hospital (天主教聖保祿醫院) *</a> | No. 123, Jianxin St., Taoyuan Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=林口長庚紀念醫院" target="_blank" rel="noopener">Linkou Chang Gung Memorial Hospital (林口長庚紀念醫院) *</a> | No. 5, Fuxing St., Guishan Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=桃園長庚醫院" target="_blank" rel="noopener">Taoyuan Chang Gung Memorial Hospital (桃園長庚醫院)</a> | No. 123, Dinghu Rd., Guishan Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=怡仁綜合醫院" target="_blank" rel="noopener">Yee Zen General Hospital (怡仁綜合醫院) *</a> | No. 30, Ln. 321, Yangxin N. Rd., Yangmei Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=聯新國際醫院" target="_blank" rel="noopener">Landseed International Hospital (聯新國際醫院) *</a> | No. 77, Guangtai Rd., Pingzhen Dist., Taoyuan City</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=楊梅天成醫院" target="_blank" rel="noopener">Ten-Chan Hospital &ndash; Yangmei (楊梅天成醫院) *</a> | No. 356, Sec. 1, Zhongshan N. Rd., Yangmei Dist., Taoyuan City</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=國軍桃園總醫院" target="_blank" rel="noopener">Taoyuan Armed Forces General Hospital (國軍桃園總醫院) *</a> | No. 168, Zhongxing Rd., Longtan Dist., Taoyuan City 325</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院" target="_blank" rel="noopener">Taoyuan General Hospital, MOHW (衛生福利部桃園醫院) *</a> | No. 1492, Zhongshan Rd., Taoyuan Dist., Taoyuan City 330</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=衛生福利部桃園醫院新屋分院" target="_blank" rel="noopener">Taoyuan General Hospital &ndash; Xinwu Branch (桃園醫院新屋分院)</a> | No. 6, Xinfu 2nd Rd., Xinwu Dist., Taoyuan City 327</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=台北榮民總醫院桃園分院" target="_blank" rel="noopener">Taipei Veterans General Hospital &ndash; Taoyuan Branch (台北榮總桃園分院) *</a> | No. 100, Sec. 3, Chenggong Rd., Taoyuan Dist., Taoyuan City 330</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天晟醫院" target="_blank" rel="noopener">Ten-Chen Hospital (天晟醫院) *</a> | No. 155, Yanping Rd., Zhongli Dist., Taoyuan City 320</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教聖保祿醫院" target="_blank" rel="noopener">St. Paul's Hospital (天主教聖保祿醫院) *</a> | No. 123, Jianxin St., Taoyuan Dist., Taoyuan City 330</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=林口長庚紀念醫院" target="_blank" rel="noopener">Linkou Chang Gung Memorial Hospital (林口長庚紀念醫院) *</a> | No. 5, Fuxing St., Guishan Dist., Taoyuan City 333</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=桃園長庚醫院" target="_blank" rel="noopener">Taoyuan Chang Gung Memorial Hospital (桃園長庚醫院)</a> | No. 123, Dinghu Rd., Guishan Dist., Taoyuan City 333</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=怡仁綜合醫院" target="_blank" rel="noopener">Yee Zen General Hospital (怡仁綜合醫院) *</a> | No. 30, Ln. 321, Yangxin N. Rd., Yangmei Dist., Taoyuan City 326</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=聯新國際醫院" target="_blank" rel="noopener">Landseed International Hospital (聯新國際醫院) *</a> | No. 77, Guangtai Rd., Pingzhen Dist., Taoyuan City 324</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=楊梅天成醫院" target="_blank" rel="noopener">Ten-Chan Hospital &ndash; Yangmei (楊梅天成醫院) *</a> | No. 356, Sec. 1, Zhongshan N. Rd., Yangmei Dist., Taoyuan City 326</li>
       </ul>
     </div>
   </details>
@@ -605,13 +607,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
     <div class="detail-body">
       <p>* = offers special examination items.</p>
       <ul>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院斗六院區" target="_blank" rel="noopener">NTU Hospital Yunlin Branch &ndash; Douliu (臺大醫院雲林分院斗六院區) *</a> | No. 579, Sec. 2, Yunlin Rd., Douliu City, Yunlin County</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院虎尾院區" target="_blank" rel="noopener">NTU Hospital Yunlin Branch &ndash; Huwei (臺大醫院雲林分院虎尾院區)</a> | No. 95, Xuefu Rd., Huwei Township, Yunlin County</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=成大醫院斗六分院" target="_blank" rel="noopener">NCKU Hospital &ndash; Douliu Branch (成大醫院斗六分院) *</a> | No. 345, Zhuangjing Rd., Douliu City, Yunlin County</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教若瑟醫院" target="_blank" rel="noopener">St. Joseph's Hospital (天主教若瑟醫院) *</a> | No. 74, Xinsheng Rd., Huwei Township, Yunlin County</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林基督教醫院" target="_blank" rel="noopener">Yunlin Christian Hospital (雲林基督教醫院) *</a> | No. 375, Shichang S. Rd., Xiluo Township, Yunlin County</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林長庚紀念醫院" target="_blank" rel="noopener">Yunlin Chang Gung Memorial Hospital (雲林長庚紀念醫院)</a> | No. 1500, Gongye Rd., Mailiao Township, Yunlin County</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=中國醫藥大學北港附設醫院" target="_blank" rel="noopener">China Medical University Beigang Hospital (中國醫藥大學北港附設醫院) *</a> | No. 123, Xinde Rd., Beigang Township, Yunlin County</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院斗六院區" target="_blank" rel="noopener">NTU Hospital Yunlin Branch &ndash; Douliu (臺大醫院雲林分院斗六院區) *</a> | No. 579, Sec. 2, Yunlin Rd., Douliu City, Yunlin County 640</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=臺大醫院雲林分院虎尾院區" target="_blank" rel="noopener">NTU Hospital Yunlin Branch &ndash; Huwei (臺大醫院雲林分院虎尾院區)</a> | No. 95, Xuefu Rd., Huwei Township, Yunlin County 632</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=成大醫院斗六分院" target="_blank" rel="noopener">NCKU Hospital &ndash; Douliu Branch (成大醫院斗六分院) *</a> | No. 345, Zhuangjing Rd., Douliu City, Yunlin County 640</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=天主教若瑟醫院" target="_blank" rel="noopener">St. Joseph's Hospital (天主教若瑟醫院) *</a> | No. 74, Xinsheng Rd., Huwei Township, Yunlin County 632</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林基督教醫院" target="_blank" rel="noopener">Yunlin Christian Hospital (雲林基督教醫院) *</a> | No. 375, Shichang S. Rd., Xiluo Township, Yunlin County 648</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=雲林長庚紀念醫院" target="_blank" rel="noopener">Yunlin Chang Gung Memorial Hospital (雲林長庚紀念醫院)</a> | No. 1500, Gongye Rd., Mailiao Township, Yunlin County 63862</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=中國醫藥大學北港附設醫院" target="_blank" rel="noopener">China Medical University Beigang Hospital (中國醫藥大學北港附設醫院) *</a> | No. 123, Xinde Rd., Beigang Township, Yunlin County 651</li>
       </ul>
     </div>
   </details>
@@ -638,7 +640,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
     <summary>Min-Sheng Hospital (Partner) &mdash; Contact &amp; Hours</summary>
     <div class="detail-body">
       <ul style="columns:1;">
-        <li><b>Jingguo Branch</b>: B1, No. 168, Jingguo Rd., Taoyuan City | (03)317-9599 #7121<br>Hours: Mon&ndash;Sat 08:30&ndash;11:00 / Mon&ndash;Fri 13:30&ndash;16:00</li>
+        <li><b>Jingguo Branch</b>: B1, No. 168, Jingguo Rd., Taoyuan Dist., Taoyuan City | (03)317-9599 #7121<br>Hours: Mon&ndash;Sat 08:30&ndash;11:00 / Mon&ndash;Fri 13:30&ndash;16:00</li>
         <li><b>Longtan Branch</b>: No. 168, Zhongfeng Rd., Longtan Dist., Taoyuan City | (03)479-9099<br>Hours: Mon&ndash;Fri 08:30&ndash;11:00 &amp; 13:30&ndash;16:00 / Sat 08:30&ndash;11:00</li>
       </ul>
     </div>
@@ -648,7 +650,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 <!-- ===================== 當日流程 ===================== -->
 <section class="section" id="dayflow">
   <div class="sec-head">
-    <div class="en">Your First Day</div>
+    <div class="en">Day 1 at a Glance</div>
     <h2>Your First Day Schedule</h2>
     <p class="lede">Here is your Day 1 schedule. Please arrive at the security gate a little early and gather in the lobby at 08:00.</p>
   </div>
@@ -664,20 +666,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   </div>
   <div class="cards" style="max-width:920px; margin:34px auto 0;">
     <div class="card">
-      <h3><span class="icon">&#9200;</span>Arrival Time</h3>
+      <h3><span class="icon" aria-hidden="true">&#9200;</span>Arrival Time</h3>
       <p><b>Arrive at the security gate early</b> and gather in the lobby at <b>08:00</b>.</p>
     </div>
     <div class="card">
-      <h3><span class="icon">&#128085;</span>Dress Code</h3>
+      <h3><span class="icon" aria-hidden="true">&#128085;</span>Dress Code</h3>
       <p><b>Neat attire or business casual</b> is fine; please avoid shorts and slippers.</p>
     </div>
     <div class="card">
-      <h3><span class="icon">&#127869;</span>Lunch</h3>
+      <h3><span class="icon" aria-hidden="true">&#127869;</span>Lunch</h3>
       <p>Lunch is served in the <b>staff cafeteria</b> &mdash; no cash needed.</p>
     </div>
   </div>
   <div class="notice">
-    <div>&#9432;</div>
+    <div aria-hidden="true">&#9432;</div>
     <div>Exact times and meeting points are subject to your <b>offer letter / HR notice</b>; your recruiter will inform you of any changes.</div>
   </div>
 </section>
@@ -685,15 +687,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 <!-- ===================== 交通停車 ===================== -->
 <section class="section" id="traffic">
   <div class="sec-head">
-    <div class="en">Parking &amp; Transportation</div>
+    <div class="en">Getting Here</div>
     <h2>Parking &amp; Transportation</h2>
     <p class="lede">All company parking requires prior application. On Day 1, please park according to the instructions for your plant below.</p>
   </div>
   <h3 class="flow-title">Taoyuan Headquarters &mdash; Jiandong Plant (建東廠)</h3>
-  <p class="plant-addr">No. 29, Jianguo E. Rd., Guishan Dist., Taoyuan City | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+建國東路29號" target="_blank" rel="noopener">Open in Google Maps</a></p>
+  <p class="plant-addr">No. 29, Jianguo E. Rd., Guishan Dist., Taoyuan City 333 | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+建國東路29號" target="_blank" rel="noopener">Open in Google Maps</a></p>
   <div class="cards">
     <div class="card">
-      <h3><span class="icon">&#128663;</span>Day 1 Parking Steps</h3>
+      <h3><span class="icon" aria-hidden="true">&#128663;</span>Day 1 Parking Steps</h3>
       <ol>
         <li>Tell HR in advance that you need parking</li>
         <li>Check with the security gate on Day 1 whether a space is available</li>
@@ -701,7 +703,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       </ol>
     </div>
     <div class="card">
-      <h3><span class="icon">&#127915;</span>Partner Parking Lot</h3>
+      <h3><span class="icon" aria-hidden="true">&#127915;</span>Partner Parking Lot</h3>
       <p><b>CarTing Tao-2 Lot (車亭桃2場)</b> | No. 28, Yanping Rd., Taoyuan Dist., Taoyuan City</p>
       <ul>
         <li>Fees (weekdays): scooters NT$20/day, cars NT$20/hour</li>
@@ -709,7 +711,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       </ul>
     </div>
     <div class="card">
-      <h3><span class="icon">&#128652;</span>Public Transit</h3>
+      <h3><span class="icon" aria-hidden="true">&#128652;</span>Public Transit</h3>
       <ul>
         <li><b>Train (TRA)</b>: from Taoyuan Station, about a 15&ndash;20 minute walk to the Taoyuan HQ (Jiandong Plant)</li>
         <li><b>Bus</b>: use <a href="https://moovitapp.com/" target="_blank" rel="noopener">Moovit</a> for route planning</li>
@@ -717,22 +719,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
     </div>
   </div>
   <h3 class="flow-title">Longtan Science Park Plant (龍科廠)</h3>
-  <p class="plant-addr">No. 288, Longyuan 1st Rd., Longtan Dist., Taoyuan City | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+龍園一路288號" target="_blank" rel="noopener">Open in Google Maps</a></p>
+  <p class="plant-addr">No. 288, Longyuan 1st Rd., Longtan Dist., Taoyuan City 325 | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+龍園一路288號" target="_blank" rel="noopener">Open in Google Maps</a></p>
   <div class="cards">
-    <div class="card"><h3><span class="icon">01</span>Confirm with HR in Advance</h3><p>If you plan to drive or ride, please <b>confirm with HR before Day 1</b> so plant entry can be arranged.</p></div>
-    <div class="card"><h3><span class="icon">02</span>Day 1 Parking</h3><p>Park in the <b>open area across from Security Post No. 1</b>.</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">01</span>Confirm with HR in Advance</h3><p>If you plan to drive or ride, please <b>confirm with HR before Day 1</b> so plant entry can be arranged.</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">02</span>Day 1 Parking</h3><p>Park in the <b>open area across from Security Post No. 1</b>.</p></div>
   </div>
   <h3 class="flow-title">Yunlin Science Park Plant (雲科廠)</h3>
-  <p class="plant-addr">No. 29, Kegong 7th Rd., Douliu City, Yunlin County | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+科工七路29號" target="_blank" rel="noopener">Open in Google Maps</a></p>
+  <p class="plant-addr">No. 29, Kegong 7th Rd., Douliu City, Yunlin County 640 | <a href="https://www.google.com/maps/search/?api=1&query=明基材料+科工七路29號" target="_blank" rel="noopener">Open in Google Maps</a></p>
   <div class="cards">
-    <div class="card"><h3><span class="icon">01</span>Day 1 Parking</h3><p>Park along the <b>roadside next to the security post</b>; please park neatly.</p></div>
-    <div class="card"><h3><span class="icon">02</span>Parking Permit</h3><p>Apply for either a car or a scooter space; bring the originals and copies of your vehicle registration and driver's license on Day 1.</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">01</span>Day 1 Parking</h3><p>Park along the <b>roadside next to the security post</b>; please park neatly.</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">02</span>Parking Permit</h3><p>Apply for either a car or a scooter space; bring the originals and copies of your vehicle registration and driver's license on Day 1.</p></div>
   </div>
 </section>
 
 <!-- ===================== 常見問題 ===================== -->
 <section class="section" id="faq">
-  <div class="sec-head"><div class="en">Frequently Asked Questions</div><h2>Frequently Asked Questions</h2><p class="lede">If you have any questions, check the answers below or contact the HR contact in your offer letter.</p></div>
+  <div class="sec-head"><div class="en">Need Help?</div><h2>Frequently Asked Questions</h2><p class="lede">If you have any questions, check the answers below or contact the HR contact in your offer letter.</p></div>
   <details class="detail-box"><summary>What if my health report has not arrived before Day 1?</summary><div class="detail-body"><p>If you were examined at a <b>partner hospital</b>, you can check in with the <b>examination receipt</b> first. Otherwise, keep your proof of examination and let HR know in advance to confirm how to proceed.</p></div></details>
   <details class="detail-box"><summary>What if I do not have a CTBC or Mega Bank account?</summary><div class="detail-body"><p>Bring the first page of your offer letter to the bank to open one; please confirm the required documents and processing time with the bank first.</p></div></details>
   <details class="detail-box"><summary>Can I still report if some documents are not ready?</summary><div class="detail-body"><p>Please tell HR before Day 1 which documents are missing and when you can provide them; HR will help confirm how to proceed.</p></div></details>

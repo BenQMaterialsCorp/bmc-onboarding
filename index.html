@@ -60,6 +60,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .nav-links a {
   display: block; padding: 8px 14px; border-radius: 8px;
   font-size: 14px; font-weight: 500; color: var(--ink); text-decoration: none;
+  white-space: nowrap;
   transition: background .15s, color .15s;
 }
 .nav-links a:hover { background: var(--purple-pale); color: var(--purple); }
@@ -70,6 +71,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .lang-switch {
   display: inline-block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
   font-size: 13px; font-weight: 700; color: var(--purple-dark); text-decoration: none;
+  white-space: nowrap;
   transition: background .15s, color .15s, border-color .15s;
 }
 .lang-switch:hover { background: var(--purple); border-color: var(--purple); color: #fff; }
@@ -448,7 +450,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   </div>
 
   <div class="notice">
-    <div>&#9998;</div>
+    <div aria-hidden="true">&#9998;</div>
     <div><b>請先填寫基本資料：</b>為了提前開通您的權限，請最晚於報到日前 7 日完成 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX4WSCbJkUC0phXERykD2cIJjGZDSSa9bSdJt9B0pLHrWJ5A/viewform" target="_blank" rel="noopener" style="color:#7a6320; font-weight:700; text-decoration:underline;">員工基本資料</a> 填寫。</div>
   </div>
 </section>
@@ -462,7 +464,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   </div>
 
   <div class="notice" style="margin-bottom:26px;">
-    <div>&#9888;</div>
+    <div aria-hidden="true">&#9888;</div>
     <div><b>請於報到當天備妥以下文件。</b>若文件未齊全，報到手續將暫時無法完成，需待文件補齊後才能正式錄用。另可提供<b>電子檔證件照</b>供識別證製作（報到當天出示即可）；報到<b>不需要攜帶印章</b>。</div>
   </div>
 
@@ -541,11 +543,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   <div class="sec-head">
     <div class="en">Health Examination</div>
     <h2>自費勞工體檢資訊</h2>
-    <p class="lede">依據勞工安全衛生法相關規定，請您於報到前前往<b>區域級以上醫院</b>或建議醫院進行體檢。</p>
+    <p class="lede">依據職業安全衛生法相關規定，請您於報到前前往<b>區域級以上醫院</b>或建議醫院進行體檢。</p>
   </div>
   <div class="cards">
     <div class="card">
-      <h3><span class="icon">&#128203;</span>醫院體檢攜帶</h3>
+      <h3><span class="icon" aria-hidden="true">&#128203;</span>醫院體檢攜帶</h3>
       <ul>
         <li>身分證及健保卡正本</li>
         <li>2 吋或 1 吋<b>近六個月</b>證件照片一張</li>
@@ -553,11 +555,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       </ul>
     </div>
     <div class="card">
-      <h3><span class="icon">&#127973;</span>醫院資格</h3>
+      <h3><span class="icon" aria-hidden="true">&#127973;</span>醫院資格</h3>
       <p><b>診所的體檢報告恕不接受。</b>請選擇區域級以上醫院或下方建議醫院；建議優先選擇<span class="tag">特約醫院</span>，享優惠費用。</p>
     </div>
     <div class="card">
-      <h3><span class="icon">&#9200;</span>可免再次體檢</h3>
+      <h3><span class="icon" aria-hidden="true">&#9200;</span>可免再次體檢</h3>
       <p>若您持有<b>三個月內</b>由區域級以上醫院出具的體檢報告，則可免除再次體檢。</p>
     </div>
   </div>
@@ -580,7 +582,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       <ul style="columns:1;">
         <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院經國院區" target="_blank" rel="noopener">敏盛綜合醫院－經國院區</a>｜330 桃園市桃園區經國路 168 號｜具特檢服務；體檢結果將由醫院提供公司，作為員工健康管理用途</li>
         <li><a href="https://www.google.com/maps/search/?api=1&query=敏盛綜合醫院龍潭院區" target="_blank" rel="noopener">敏盛綜合醫院－龍潭院區</a>｜325 桃園市龍潭區中豐路 168 號｜無特檢服務；體檢結果將由醫院提供公司，作為員工健康管理用途</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=德仁醫院+桃園市桃鶯路245號" target="_blank" rel="noopener">德仁醫院</a>｜330 桃園市桃鶯路 245 號｜無特檢服務</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=德仁醫院+桃園市桃鶯路245號" target="_blank" rel="noopener">德仁醫院</a>｜330 桃園市桃園區桃鶯路 245 號｜無特檢服務</li>
         <li><a href="https://www.google.com/maps/search/?api=1&query=華揚醫院+中壢區中北路二段316號" target="_blank" rel="noopener">華揚醫院</a>｜320 桃園市中壢區中北路二段 316 號｜無特檢服務</li>
       </ul>
       <p><b>其他建議醫院：</b>（標示 * 者具特檢服務）</p>
@@ -618,7 +620,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   <details class="detail-box">
     <summary>體檢前注意事項與體檢流程</summary>
     <div class="detail-body">
-      <p><b>新人體格檢查注意事項</b>（依勞工安全衛生法相關規定施行）：</p>
+      <p><b>新人體格檢查注意事項</b>（依職業安全衛生法相關規定施行）：</p>
       <ul style="columns:1;">
         <li>健檢前三日避免熬夜、喝酒、刺激品、濃茶、濃咖啡、生肉、海鮮。</li>
         <li>請穿著輕便服裝，勿穿有釦子、金屬之內衣或配戴項鍊，上衣口袋勿放置任何物品，以免影響 X 光檢查。</li>
@@ -637,7 +639,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
     <summary>敏盛醫院（特約醫院）聯絡資訊與檢查時間</summary>
     <div class="detail-body">
       <ul style="columns:1;">
-        <li><b>經國院區</b>：桃園市經國路 168 號 B1｜(03)317-9599 #7121<br>檢查時間：週一至週六 08:30–11:00／週一至週五 13:30–16:00</li>
+        <li><b>經國院區</b>：桃園市桃園區經國路 168 號 B1｜(03)317-9599 #7121<br>檢查時間：週一至週六 08:30–11:00／週一至週五 13:30–16:00</li>
         <li><b>龍潭院區</b>：桃園市龍潭區中豐路 168 號｜(03)479-9099<br>檢查時間：週一至週五 08:30–11:00、13:30–16:00／週六 08:30–11:00</li>
       </ul>
     </div>
@@ -663,20 +665,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   </div>
   <div class="cards" style="max-width:920px; margin:34px auto 0;">
     <div class="card">
-      <h3><span class="icon">&#9200;</span>抵達時間</h3>
+      <h3><span class="icon" aria-hidden="true">&#9200;</span>抵達時間</h3>
       <p>請<b>提前抵達警衛室</b>，並於 <b>08:00</b> 在大廳等候集合。</p>
     </div>
     <div class="card">
-      <h3><span class="icon">&#128085;</span>服裝建議</h3>
+      <h3><span class="icon" aria-hidden="true">&#128085;</span>服裝建議</h3>
       <p>著<b>整齊服裝或 Business Casual</b> 即可，避免穿著短褲、拖鞋。</p>
     </div>
     <div class="card">
-      <h3><span class="icon">&#127869;</span>午餐</h3>
+      <h3><span class="icon" aria-hidden="true">&#127869;</span>午餐</h3>
       <p>午餐於<b>公司員工餐廳</b>用餐，不需付現。</p>
     </div>
   </div>
   <div class="notice">
-    <div>&#9432;</div>
+    <div aria-hidden="true">&#9432;</div>
     <div>當日詳細時間與集合地點以<b>錄取通知信／HR 通知</b>為準；如有異動將由您的招募窗口另行通知。</div>
   </div>
 </section>
@@ -692,7 +694,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   <p class="plant-addr">333 桃園市龜山區建國東路 29 號｜<a href="https://www.google.com/maps/search/?api=1&query=明基材料+建國東路29號" target="_blank" rel="noopener">開啟地圖導航</a></p>
   <div class="cards">
     <div class="card">
-      <h3><span class="icon">&#128663;</span>報到當天入廠停車步驟</h3>
+      <h3><span class="icon" aria-hidden="true">&#128663;</span>報到當天入廠停車步驟</h3>
       <ol>
         <li>提前告知 HR 停車需求</li>
         <li>報到當日於警衛室確認廠內是否有車位</li>
@@ -700,7 +702,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       </ol>
     </div>
     <div class="card">
-      <h3><span class="icon">&#127915;</span>公司合作停車場資訊</h3>
+      <h3><span class="icon" aria-hidden="true">&#127915;</span>公司合作停車場資訊</h3>
       <p><b>車亭桃 2 場</b>｜桃園市桃園區延平路 28 號</p>
       <ul>
         <li>費用：機車平日 20 元／天，汽車平日 20 元／小時</li>
@@ -708,7 +710,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
       </ul>
     </div>
     <div class="card">
-      <h3><span class="icon">&#128652;</span>大眾運輸</h3>
+      <h3><span class="icon" aria-hidden="true">&#128652;</span>大眾運輸</h3>
       <ul>
         <li><b>台鐵</b>：桃園火車站下車，步行至桃園總部（建東廠）約需 15–20 分鐘</li>
         <li><b>公車</b>：可使用 <a href="https://moovitapp.com/" target="_blank" rel="noopener">Moovit</a> 進行路線規劃</li>
@@ -718,14 +720,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   <h3 class="flow-title">龍科廠</h3>
   <p class="plant-addr">325 桃園市龍潭區龍園一路 288 號｜<a href="https://www.google.com/maps/search/?api=1&query=明基材料+龍園一路288號" target="_blank" rel="noopener">開啟地圖導航</a></p>
   <div class="cards">
-    <div class="card"><h3><span class="icon">01</span>報到前先與 HR 確認</h3><p>開車或騎車須於<b>報到前與 HR 確認</b>，以利後續入廠申請。</p></div>
-    <div class="card"><h3><span class="icon">02</span>報到當日停放</h3><p>請停放於<b>一號警衛哨對面的空地</b>。</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">01</span>報到前先與 HR 確認</h3><p>開車或騎車須於<b>報到前與 HR 確認</b>，以利後續入廠申請。</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">02</span>報到當日停放</h3><p>請停放於<b>一號警衛哨對面的空地</b>。</p></div>
   </div>
   <h3 class="flow-title">雲科廠</h3>
   <p class="plant-addr">640 雲林縣斗六市科工七路 29 號｜<a href="https://www.google.com/maps/search/?api=1&query=明基材料+科工七路29號" target="_blank" rel="noopener">開啟地圖導航</a></p>
   <div class="cards">
-    <div class="card"><h3><span class="icon">01</span>報到當日停放</h3><p>請於<b>警衛哨旁路邊停車</b>，車輛需停放整齊。</p></div>
-    <div class="card"><h3><span class="icon">02</span>停車證申請</h3><p>汽機車位每人擇一申請，報到當天攜帶行照及個人駕照正本及影本辦理。</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">01</span>報到當日停放</h3><p>請於<b>警衛哨旁路邊停車</b>，車輛需停放整齊。</p></div>
+    <div class="card"><h3><span class="icon" aria-hidden="true">02</span>停車證申請</h3><p>汽機車位每人擇一申請，報到當天攜帶行照及個人駕照正本及影本辦理。</p></div>
   </div>
 </section>
 

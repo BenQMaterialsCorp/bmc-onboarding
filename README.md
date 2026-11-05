@@ -4,8 +4,8 @@
 
 **正式網址**
 
-- 中文版：https://harry985991.github.io/bmc-onboarding/
-- 英文版：https://harry985991.github.io/bmc-onboarding/en/
+- 中文版：https://benqmaterialscorp.github.io/bmc-onboarding/
+- 英文版：https://benqmaterialscorp.github.io/bmc-onboarding/en/
 
 ## 網站功能
 
@@ -60,6 +60,7 @@ python3 -m http.server 8080
 
 ## 部署設定（已完成，供日後參考）
 
+- Repository 位於 GitHub 組織 `BenQMaterialsCorp`（2026-11 自個人帳號移入）；舊網址 `harry985991.github.io/bmc-onboarding/` 由個人帳號下的同名轉址 repo 自動轉到新網址
 - Repository Settings → Pages → Source 設為 **GitHub Actions**
 - push 至 `main` 即觸發 `Deploy onboarding site to GitHub Pages` workflow
 - 如日後改用公司正式子網域：於 Settings → Pages 設定 custom domain、完成網域驗證並強制啟用 HTTPS
